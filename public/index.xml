@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gud wit Wurdz - Tommie Matherne</title>
+    <link>/</link>
+    <description>Recent content on Gud wit Wurdz - Tommie Matherne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2023, Tommie Matherne</copyright>
+    <lastBuildDate>Sun, 01 Jan 2023 17:09:56 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 01 Jan 2023 17:09:56 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About Me I am a web developer and experienced mentor and team liaison. I am looking for a team where I can leverage my experience not only in development, but in the lessons gained through my life to help others while also meeting my own goals. In the future, I look forward to assisting development in software and systems that work toward a more equitable and fair world for all.</description>
+      <content>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+&lt;p&gt;I am a web developer and experienced mentor and team liaison. I am looking for a team where I can leverage my experience not only in development, but in the lessons gained through my life to help others while also meeting my own goals. In the future, I look forward to assisting development in software and systems that work toward a more equitable and fair world for all.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>What to Expect</title>
+      <link>/posts/what-to-expect/</link>
+      <pubDate>Sun, 01 Jan 2023 17:09:56 -0700</pubDate>
+      
+      <guid>/posts/what-to-expect/</guid>
+      <description>COMING SOON Within the coming weeks, this site will expand greatly beyond the current static blog you are reading now. This is, after all, my portfolio! It should show this, I think, if it is going to be effective in helping me get a job.
+First thing that will be done, I am going to be uploading some JavaScript games. Simple games will be the first as I gain some further familiarity with using JavaScript to make games, but gaining in complexity quickly.</description>
+      <content>&lt;h1 id=&#34;coming-soon&#34;&gt;COMING SOON&lt;/h1&gt;
+&lt;p&gt;Within the coming weeks, this site will expand greatly beyond the current static blog you are reading now. This is, after all, my portfolio! It should show this, I think, if it is going to be effective in helping me get a job.&lt;/p&gt;
+&lt;p&gt;First thing that will be done, I am going to be uploading some JavaScript games. Simple games will be the first as I gain some further familiarity with using JavaScript to make games, but gaining in complexity quickly. As I will be creating my own art assets, the games pages will be linking to the repositories with that art. Having no musical talent beyond karaoke (and then only in my own mind), the sound in the games will be properly credited below each game.&lt;/p&gt;
+&lt;p&gt;Next, I will be putting up more posts as were previously seen on &lt;a href=&#34;https://www.blog.gudwitwurdz.click&#34;&gt;blog.gudwitwurdz.click&lt;/a&gt;. Starting with porting over those previous posts and then expanding them. If you were following that (who are you?), those posts will continue, stay tuned.&lt;/p&gt;
+&lt;p&gt;Finally, this site is currently built with Hugo using the Terminal template. Credit is at the bottom of every page if you would like to contact the creator of the template. I will be looking into creating my own template and personalizing this template, as well.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
