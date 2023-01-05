@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>www.gudwitwurdz.click/</loc>
+    <loc>/</loc>
     <lastmod>2023-01-05T13:25:14-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-01-05T13:25:14-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-01-05T13:25:14-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/tags/updates/</loc>
+    <loc>/tags/updates/</loc>
     <lastmod>2023-01-05T13:25:14-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/posts/whats-next/</loc>
+    <loc>/posts/whats-next/</loc>
     <lastmod>2023-01-05T13:25:14-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2023-01-01T17:09:56-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/tags/future/</loc>
+    <loc>/tags/future/</loc>
     <lastmod>2023-01-01T17:09:56-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/tags/goals/</loc>
+    <loc>/tags/goals/</loc>
     <lastmod>2023-01-01T17:09:56-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/posts/what-to-expect/</loc>
+    <loc>/posts/what-to-expect/</loc>
     <lastmod>2023-01-01T17:09:56-07:00</lastmod>
   </url><url>
-    <loc>www.gudwitwurdz.click/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>
