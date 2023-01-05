@@ -2,28 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Gud wit Wurdz - Tommie Matherne</title>
-    <link>/tags/</link>
+    <link>www.gudwitwurdz.click/tags/</link>
     <description>Recent content in Tags on Gud wit Wurdz - Tommie Matherne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Sun, 01 Jan 2023 17:09:56 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jan 2023 13:25:14 -0700</lastBuildDate><atom:link href="www.gudwitwurdz.click/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>updates</title>
+      <link>www.gudwitwurdz.click/tags/updates/</link>
+      <pubDate>Thu, 05 Jan 2023 13:25:14 -0700</pubDate>
+      
+      <guid>www.gudwitwurdz.click/tags/updates/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>future</title>
-      <link>/tags/future/</link>
+      <link>www.gudwitwurdz.click/tags/future/</link>
       <pubDate>Sun, 01 Jan 2023 17:09:56 -0700</pubDate>
       
-      <guid>/tags/future/</guid>
+      <guid>www.gudwitwurdz.click/tags/future/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>goals</title>
-      <link>/tags/goals/</link>
+      <link>www.gudwitwurdz.click/tags/goals/</link>
       <pubDate>Sun, 01 Jan 2023 17:09:56 -0700</pubDate>
       
-      <guid>/tags/goals/</guid>
+      <guid>www.gudwitwurdz.click/tags/goals/</guid>
       <description></description>
       <content></content>
     </item>
