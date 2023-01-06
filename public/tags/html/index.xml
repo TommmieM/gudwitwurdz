@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Gud wit Wurdz - Tommie Matherne</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Gud wit Wurdz - Tommie Matherne</description>
+    <title>HTML on Gud wit Wurdz - Tommie Matherne</title>
+    <link>/tags/html/</link>
+    <description>Recent content in HTML on Gud wit Wurdz - Tommie Matherne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Fri, 06 Jan 2023 14:31:45 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 14:31:45 -0700</lastBuildDate><atom:link href="/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tutorial 1 Getting Started With HTML</title>
       <link>/posts/tutorial-1-getting-started-with-html/</link>
@@ -29,37 +29,6 @@ Editor Set Up So, if you are interested in web development, I&amp;rsquo;m going 
 &lt;p&gt;So, until next week&amp;rsquo;s tutorial, read through the docs, have CodePen open while you do, and experiment. Next time, we will go through some of the most frequently used tags in HTML and speak about what they do, and get to where we can get something resembling a web page up in front of us. The following week, we will cover some of the more advanced topics of attributes to tags and their effects, as well as building our first forms and tables.&lt;/p&gt;
 &lt;p&gt;In week four, we move on to CSS. As you can see, this is &lt;em&gt;very&lt;/em&gt; fast paced. I am relying on you taking some part of the week between each post to get your hands dirty in CodePen and actually making a few shitty web pages. And yes, they are shitty. First web pages always are, especially when dealing with only HTML. Don&amp;rsquo;t fear this. We development is a creative endeavor akin to writing, and &lt;a href=&#34;https://wrd.as.uky.edu/sites/default/files/1-Shitty%20First%20Drafts.pdf&#34;&gt;shitty first drafts&lt;/a&gt; are invaluable in writing!&lt;/p&gt;
 &lt;p&gt;Until next week, have fun, and keep learning!&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Whats Next</title>
-      <link>/posts/whats-next/</link>
-      <pubDate>Thu, 05 Jan 2023 13:25:14 -0700</pubDate>
-      
-      <guid>/posts/whats-next/</guid>
-      <description>What&amp;rsquo;s Next Here So just an update now that I&amp;rsquo;ve decided what to do with this site. This update is actually a day late from when it was supposed to go out.
-That&amp;rsquo;s because on Wednesday&amp;rsquo;s I&amp;rsquo;m going to be adding updates on what I&amp;rsquo;m working on beside the tutorials, or launch a completed project. Fridays, I will be posting a tutorial akin to what was on the now defunct blog site.</description>
-      <content>&lt;h1 id=&#34;whats-next-here&#34;&gt;What&amp;rsquo;s Next Here&lt;/h1&gt;
-&lt;p&gt;So just an update now that I&amp;rsquo;ve decided what to do with this site. This update is actually a day late from when it was supposed to go out.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s because on Wednesday&amp;rsquo;s I&amp;rsquo;m going to be adding updates on what I&amp;rsquo;m working on beside the tutorials, or launch a completed project. Fridays, I will be posting a tutorial akin to what was on the now defunct blog site. It will be started all over from scratch, but with a more compact view of HTML and CSS, and with minimal set up! Following along this time will not require any installation on your computer, and can even be followed along with on your phone. The internet is amazing, ain&amp;rsquo;t it?&lt;/p&gt;
-&lt;p&gt;So that&amp;rsquo;s it, just a short update. Check in tomorrow for the set up and a look into the first steps of HTML. Fair warning, because of the more compact view of HTML that will be taken, there will be more reading and work off of this blog.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>What to Expect</title>
-      <link>/posts/what-to-expect/</link>
-      <pubDate>Sun, 01 Jan 2023 17:09:56 -0700</pubDate>
-      
-      <guid>/posts/what-to-expect/</guid>
-      <description>COMING SOON Within the coming weeks, this site will expand greatly beyond the current static blog you are reading now. This is, after all, my portfolio! It should show this, I think, if it is going to be effective in helping me get a job.
-First thing that will be done, I am going to be uploading some JavaScript games. Simple games will be the first as I gain some further familiarity with using JavaScript to make games, but gaining in complexity quickly.</description>
-      <content>&lt;h1 id=&#34;coming-soon&#34;&gt;COMING SOON&lt;/h1&gt;
-&lt;p&gt;Within the coming weeks, this site will expand greatly beyond the current static blog you are reading now. This is, after all, my portfolio! It should show this, I think, if it is going to be effective in helping me get a job.&lt;/p&gt;
-&lt;p&gt;First thing that will be done, I am going to be uploading some JavaScript games. Simple games will be the first as I gain some further familiarity with using JavaScript to make games, but gaining in complexity quickly. As I will be creating my own art assets, the games pages will be linking to the repositories with that art. Having no musical talent beyond karaoke (and then only in my own mind), the sound in the games will be properly credited below each game.&lt;/p&gt;
-&lt;p&gt;Next, I will be putting up more posts as were previously seen on &lt;a href=&#34;https://www.blog.gudwitwurdz.click&#34;&gt;blog.gudwitwurdz.click&lt;/a&gt;. Starting with porting over those previous posts and then expanding them. If you were following that (who are you?), those posts will continue, stay tuned.&lt;/p&gt;
-&lt;p&gt;Finally, this site is currently built with Hugo using the Terminal template. Credit is at the bottom of every page if you would like to contact the creator of the template. I will be looking into creating my own template and personalizing this template, as well.&lt;/p&gt;
 </content>
     </item>
     

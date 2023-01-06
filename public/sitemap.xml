@@ -3,13 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2023-01-05T13:25:14-07:00</lastmod>
+    <lastmod>2023-01-06T14:31:45-07:00</lastmod>
+  </url><url>
+    <loc>/tags/html/</loc>
+    <lastmod>2023-01-06T14:31:45-07:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2023-01-05T13:25:14-07:00</lastmod>
+    <lastmod>2023-01-06T14:31:45-07:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2023-01-05T13:25:14-07:00</lastmod>
+    <lastmod>2023-01-06T14:31:45-07:00</lastmod>
+  </url><url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2023-01-06T14:31:45-07:00</lastmod>
+  </url><url>
+    <loc>/posts/tutorial-1-getting-started-with-html/</loc>
+    <lastmod>2023-01-06T14:31:45-07:00</lastmod>
   </url><url>
     <loc>/tags/updates/</loc>
     <lastmod>2023-01-05T13:25:14-07:00</lastmod>
