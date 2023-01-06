@@ -17,7 +17,7 @@ So, here we go. The set up tutorial. If you remember the old blog about this, do
 
 # Editor Set Up
 
-So, if you are interested in web development, I'm going to assume you have access to the internet in some fashion. Thus, we are going to edit the code online. If you go to [CodePen](www.codepen.io), you can sign up for free, and have at your fingertips editors with colored syntax highlighting for HTML, CSS, and JavaScript. This should open this set of instruction for everyone, whether you have a desktop, laptop, or even just your cell phone. 
+So, if you are interested in web development, I'm going to assume you have access to the internet in some fashion. Thus, we are going to edit the code online. If you go to [CodePen](https://www.codepen.io), you can sign up for free, and have at your fingertips editors with colored syntax highlighting for HTML, CSS, and JavaScript. This should open this set of instruction for everyone, whether you have a desktop, laptop, or even just your cell phone. 
 
 Once you are signed up, and signed in, of course, just click on the menu and choose "New Pen". There you go. You are set up. The editors are separated for HTML, CSS, and JavaScript, either in separate editors available on your screen, or through tabs, depending on the size of your screen. There you are. You're all set up. Seriously, that's it. Why are you still here? Move on to the next section.
 
