@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lesson 1 Command Line Starters :: Gud wit Wurdz - Tommie Matherne</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The most basic commands. Navigation and orientation of you file system, and how to enhance the results with flags." />
+<meta name="keywords" content="Linux, cd, ls, cd, pwd, flags" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/lesson-1-command-line-starters/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="/img/theme-colors/green.png">
+  <link rel="apple-touch-icon" href="/img/theme-colors/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lesson 1 Command Line Starters">
+<meta property="og:description" content="The most basic commands. Navigation and orientation of you file system, and how to enhance the results with flags." />
+<meta property="og:url" content="/posts/lesson-1-command-line-starters/" />
+<meta property="og:site_name" content="Gud wit Wurdz - Tommie Matherne" />
+
+  
+  
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2023-03-12 14:52:08 -0600 MDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Gud Wit Wurdz - Tommie Matherne
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/lesson-1-command-line-starters/">Lesson 1 Command Line Starters</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2023-03-12 ::
+        
+      </time>
+    
+    
+      <span class="post-author">Tommie Matherne</span>
+    
+    
+      <span class="post-reading-time">:: 12 min read (2424 words)</span>
+    
+  </div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/linux/">Linux</a>&nbsp;
+      
+      #<a href="/tags/command-line/">command line</a>&nbsp;
+      
+      #<a href="/tags/cd/">cd</a>&nbsp;
+      
+      #<a href="/tags/ls/">ls</a>&nbsp;
+      
+      #<a href="/tags/pwd/">pwd</a>&nbsp;
+      
+      #<a href="/tags/flags/">flags</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="welcome-to-the-command-line">Welcome to the Command Line<a href="#welcome-to-the-command-line" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In this first lesson, I am going to make a few assumptions. You have access to a Linux command line, and know how to open it. Other than that, this is completely for a new user. Below we will take our first steps with Linux, and like any first steps, the best way to start off is by being able to orient yourself. The commands in this lesson will give you the ability to know what directory you are in, what is there, and how to go to other areas of the filesystem. So let&rsquo;s go!</p>
+<h3 id="a-bit-about-the-prompt">A bit about the prompt.<a href="#a-bit-about-the-prompt" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>When you first open the terminal, you should be met with a prompt something like this <code>user@host:~$</code>. This is the default prompt. The anatomy of it is rather simple. The first portion identifies the <code>user</code>, this is the logged in user, hopefully, you. After the at sign, is <code>host</code>, or the name of the workstation (computer) that you are logged into. Linux has roots from Unix, the original multiuser and multi-machine operating system. From your desk, you may sign into any number of available servers. The <code>host</code> portion of the name is a bit of an identifier of that legacy, and gives your computer a server name. Linux, by virtue of that Unix legacy, can be used as a server. In fact, Linux servers run more of the internet than any other kind of server operating system at 38% of all websites and 49% of the top 1,000 websites currently active according to W3Techs' usage comparison.</p>
+<p>That is the end of the identifier portion of the prompt. As is common in Linux, the separator is a colon (:). Everything after this is the actual prompt. The <code>~</code> located here is actually the current location. <code>~</code> is a shorthand in Linux as the user&rsquo;s Home folder. If you come from a Windows background, think of this as your Users folder there. This is where you, as a user, keep your files. Other users have their own Home folders, which you may or may not be able to look into depending on the permissions that are set up on your account as well as the individual folders.</p>
+<p>One last note. Up to now, I have been using the Windows terms that should be more familiar to most readers. In Linux, though, they are called directories. The meaning is exactly the same: a filesystem organization tool to present an easy way to find files stored on the hard drive. From now on, I will be referring to them as directories.</p>
+<p>Next, there is the <code>$</code> identifier. This is the active prompt. The <code>$</code> signifies that you are using the prompt as a normal user. If you change to a root account (synonymous with superuser or administrator), the <code>$</code> will change to a <code>#</code> to signify that difference. After that, is the blinking cursor. Let&rsquo;s put it to work, shall we?</p>
+<h2 id="pwd---the-where-am-i-of-linux">&lsquo;pwd&rsquo; - the Where Am I? of Linux<a href="#pwd---the-where-am-i-of-linux" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>At any time at the prompt, if you type in <code>pwd</code> and hit enter, you will be met with a full print out of your current location. This tells you the path from filesystem root <code>/</code> (think of this as equivalent to <code>C:\</code> in Windows), down the directory tree to your current directory. If you haven&rsquo;t changed directories since opening the terminal, it should look similar to <code>/home/username</code> with &lsquo;username&rsquo; actually being replaced by your user name. That is the folder that is signified by the <code>~</code> in the prompt. I bring this one up first as it will provide some valuable context for the next few commands. There really is not much to be said about this command, so let&rsquo;s move on, shall we.</p>
+<h3 id="a-note-about-the-file-paths">A note about the file paths<a href="#a-note-about-the-file-paths" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The results of the <code>pwd</code> command was what is known as a file path. More particularly, it is an &ldquo;absolute&rdquo; file path. It starts at root (<code>/</code>), and travels past each folder name, separated by further &lsquo;/&rsquo; characters, and ends with a final &lsquo;/&rsquo; to denote that this, too is a directory. There are also a second kind of file path printing known as &ldquo;relative&rdquo; file paths. This is the path forward from where you are currently, on through to where you want to end up. Describing this now is a bit difficult to do with clarity. We will return to this idea shortly.</p>
+<h2 id="ls---well-what-have-we-got-here">&lsquo;ls&rsquo; - Well what have we got here?<a href="#ls---well-what-have-we-got-here" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>So, thanks to <code>pwd</code>, we know where we are. But what is here? To overuse comparisons, this command line currently is a cave as black as the screen it is printed on. How do we shine a light on this? <code>ls</code> is out next command to do so. Typing this command will &ldquo;LiSt&rdquo; the contents of the current directory, go ahead and try it out. Your output should include several items like <code>Desktop</code>, <code>Documents</code>, <code>Downloads</code>, etc. These are the directories that are inside of your home directory. If you have a few that are a different color or emphasis level, those are files within this directory. Files will usually have file extensions, where directories will not. The exception to this is plain text files, which in Linux, do not require the &lsquo;.txt&rsquo; file extension.</p>
+<p>This is pretty interesting, but the <code>ls</code> command actually introduces us to a few more concepts to Linux commands: flags and <code>man</code> pages.</p>
+<h3 id="a-note-about-flags">A note about flags<a href="#a-note-about-flags" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>When you type in a <code>-</code> after a command, this is called a flag. Most flags are single letters, and can be preceeded with a single <code>-</code>. There are some flags that are entire words, though. When defining those flags, use a double flag notation (<code>--</code>). But how do you know when you can use a flag, and what those flags are?</p>
+<h3 id="a-note-about-man-pages">A note about <code>man</code> pages.<a href="#a-note-about-man-pages" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Most, not all, commands in Linux have a MANual page that correlate to them. The help files for Linux are literally built into the system itself! To get to them, type in the command <code>man</code>, followed by the command you want to view the man page for. In this case, let&rsquo;s take a look a the man page for <code>ls</code>. Type <code>man ls</code> at your command line now. You can use either the arrow keys or the keyboard letters <code>j</code> and <code>k</code>. The keyboard options are known as Vi controls, we&rsquo;ll touch more on that in a later lesson.</p>
+<p>Let&rsquo;s take a look at this page. Being able to read these pages is an important skill for us. Every page should begin with a <strong>NAME</strong> area. This will tell you the command name, which is what you type at the command line, and usually a short line about what it does for you. After that <strong>SYNOPSIS</strong> will give you an idea of how it is used. The <code>ls</code> command can be followed by [OPTION] and [FILE]. The <code>...</code> after each is to denote that more than one of either option can be defined. Anything marked as [OPTION] can usually be omitted.
+Next is the <strong>DESCRIPTION</strong> portion of the man page. This is where you first find a more detailed description of what the command does, as well as the options for the command. As you can tell, there are a lot of options that can be used with <code>ls</code>! Let&rsquo;s just focus on two very useful ones for now, <code>-a</code> and <code>-l</code>. Read up on those two, then press <code>q</code> to exit the man page.</p>
+<h3 id="back-to-our-regularly-scheduled-program">Back to our regularly scheduled program<a href="#back-to-our-regularly-scheduled-program" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Now, back at the command line, we have a couple of things to clear up. Originally, I said &ldquo;flags&rdquo;, but the man pages call them &ldquo;options&rdquo;. This is the first instance of the time that you will see multiple names for the same thing in Linux. At least, if you don&rsquo;t count the fact that a lot of people use the terms &ldquo;folder&rdquo; and &ldquo;directory&rdquo; interchangably. Hopefully, that doesn&rsquo;t get too confusing, trust me, you get used to it.</p>
+<p>Now, let&rsquo;s put our findings to good use. At the command prompt, type in <code>ls -al</code>. Yes, short code options can be strung together after a single dash (<code>-</code>). That is why if you are using an option/flag that is a complete word, you must preceed it with double-dashes (<code>---</code>). Anyway, type that in and press enter and you will notice a bit more informationpresented that we need to discuss!</p>
+<p>First, there are obviously more directories. And they are all listed in a single row. AND what is with all these columns?! This is actually a more advanced way of viewing the contents of the directory you are in. It includes all folders, including hidden directories, which are revealed by the <code>-a</code> option. The columns are a result of the <code>-l</code> option. The first column contains a string of letters and dashes that tell you the permissions for that folder. The &rsquo;d' at the beginning denote it is a directory, files have a preceeding dash. Next are three sets of &lsquo;rwx&rsquo;, where each letter may be replaced by a dash. These mean &ldquo;read&rdquo;, &ldquo;write&rdquo;, and &ldquo;execute&rdquo;, and are repeated three times for &ldquo;User&rdquo;, &ldquo;Group&rdquo;, and &ldquo;Other&rdquo;. We will get into what that all means in another lesson as well, for now, it isn&rsquo;t important. This is followed by a number that says the number of links to that item (directory or file) exist on the entire file system.</p>
+<p>The next two columns at this point will likely have your user name in both columns. These tell you what group the file belongs to, and what user in that group created the file. Again, for now, not terribly important, and we will come back to this as we get deeper into Linux administration.</p>
+<p>The next set of numbers is the file size measured in bytes. There are more options available that will print this in more easily digestible numbers, but you may notice now that directories are all listed as being 4096 bytes, no matter how much is contained in the directory. This is because that is just the size of the identifier that is the directory name, not the size of the contents of the directory iteself.</p>
+<p>The final column before the directory name is the date and time the file or directory was last modified. Not terribly important for home use, but if you ever get a job as a cybersecurity role, this can actually be important digital forensics to note.</p>
+<p>Finally, the names of all directories, including hidden directories. You may notice that all of the directories that now appear that were not in the original listing begin with a &lsquo;.&rsquo;. Believe it or not, hiding a directory or file in Linux is as simple as starting it&rsquo;s name with a &lsquo;.&rsquo;. You may be a bit confused at the first two directories, <code>.</code> and <code>..</code>. MORE LINUX SHORTHAND, YAY!</p>
+<p>These are indeed, short names for two very specific directories. <code>.</code> is simply the shorthand form of the current directory. To show this, let&rsquo;s try something. The <code>ls</code> command is not limited to only the directory we are currently in. If you type in a directory name after the options, you can list the contents of that directory. Let&rsquo;s try it, type in <code>ls -al .</code> with that &lsquo;.&rsquo; included at the end. As you can see, it repeats the same list. That is because &lsquo;.&rsquo; is shorthand for the directory itself. Every directory has a reference to itself built in, named &lsquo;.&rsquo;</p>
+<p>So what about the &lsquo;..&rsquo;? That is a shorthand to the directory directly above the directory you are in. If you remember, when we typed in <code>pwd</code>, we got an answer of <code>/home/username</code>. So <code>username</code> is our current directory, and one level above that is <code>home</code>. If we try <code>ls -al ..</code>, you should get a response of <code>username</code> along with &lsquo;.&rsquo; and &lsquo;..&rsquo;. There may be more, as well, if there are other users on your Linux machine. The thing to note here, is that I mentioned every directory in Linux automatically has a &lsquo;.&rsquo; file referring to itself. This is also true of &lsquo;..&rsquo;. At first, this may not make much sense, as it would seem that there couldn&rsquo;t be a &lsquo;..&rsquo; file for this, as there is no level higher. For <code>/</code>, the &lsquo;..&rsquo; shortcut simply refers back to <code>/</code> just as &lsquo;.&rsquo; does. Don&rsquo;t worry, that&rsquo;s just trivia, you will never think about it again.</p>
+<p>Let&rsquo;s talk briefly about one last command before we stop for the day, shall we?</p>
+<h2 id="cd---now-we-are-going-places">&lsquo;cd&rsquo; - Now we are going places!<a href="#cd---now-we-are-going-places" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Our next command is <code>cd</code>. If you are a curious reader, you may notice that this command doesn&rsquo;t have a man page. The only reason for that is that there are no options for this command. <code>cd</code> is the &ldquo;Change Directory&rdquo; command. By typing in <code>cd</code> followed by the name of a directory, you move your <code>pwd</code> to that directory. This brings up an important point, though. How do you have to type in the name of the directory? We mentioned earlier that the &ldquo;absolute&rdquo; path to our home folder was <code>/home/username</code>, to get to, say, the Docurments directory, do we have to type in <code>cd /home/username/Documents</code>? Well, we could. That would absolutely work. However, &ldquo;relative&rdquo; pathing would be much simpler.</p>
+<h3 id="more-about-relative-file-paths">More about relative file paths<a href="#more-about-relative-file-paths" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>So, what is a relative file path? Simply, it is typing the name of a directory with the assumption that you are currently in the directory containing that as a subdirectory. The system will prepend <code>pwd</code> to the path, and attempt to move there. So if you were to type in <code>cd Documents</code> from your home directory, the system would see that as exactly the same as <code>cd /home/username/Documents</code>. This makes typing a lot easier.</p>
+<p>If you ever do find yourself outside you home folder, or whatever other folder you thought you were in, Linux will print out a nice error message saying that the directory you are trying to move to doesn&rsquo;t exist. You can use a mixture of <code>pwd</code> and <code>ls</code>, to orient yourself to correct your <code>cd</code> command to get where you mean to be.</p>
+<h3 id="whew-that-was-a-lot">Whew! That was a Lot!<a href="#whew-that-was-a-lot" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Well, not really. But it was enough to get started. Look around, see what you can find. Explore your file system a bit and see what is there, and try to think about why. Knowing how your system is laid out is a very important thing for someone looking to take control of that system. Stay curious!</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/lesson-plan/">
+                <span class="button__text">Lesson Plan</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>2023, Tommie Matherne</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/devops/</loc>
-    <lastmod>2023-03-11T17:17:57-07:00</lastmod>
+    <loc>/tags/cd/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/command-line/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/flags/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/posts/lesson-1-command-line-starters/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/ls/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/pwd/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
+  </url><url>
+    <loc>/tags/devops/</loc>
     <lastmod>2023-03-11T17:17:57-07:00</lastmod>
   </url><url>
     <loc>/posts/lesson-plan/</loc>
@@ -14,13 +41,7 @@
     <loc>/tags/plan/</loc>
     <lastmod>2023-03-11T17:17:57-07:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-03-11T17:17:57-07:00</lastmod>
-  </url><url>
     <loc>/tags/roadmap/</loc>
-    <lastmod>2023-03-11T17:17:57-07:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2023-03-11T17:17:57-07:00</lastmod>
   </url><url>
     <loc>/tags/again/</loc>

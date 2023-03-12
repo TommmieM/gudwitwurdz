@@ -7,7 +7,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Sat, 11 Mar 2023 17:17:57 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 14:52:08 -0600</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cd</title>
+      <link>/tags/cd/</link>
+      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
+      
+      <guid>/tags/cd/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>command line</title>
+      <link>/tags/command-line/</link>
+      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
+      
+      <guid>/tags/command-line/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>flags</title>
+      <link>/tags/flags/</link>
+      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
+      
+      <guid>/tags/flags/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>ls</title>
+      <link>/tags/ls/</link>
+      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
+      
+      <guid>/tags/ls/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>pwd</title>
+      <link>/tags/pwd/</link>
+      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
+      
+      <guid>/tags/pwd/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>DevOps</title>
       <link>/tags/devops/</link>
