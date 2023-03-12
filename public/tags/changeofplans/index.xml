@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Gud wit Wurdz - Tommie Matherne</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Gud wit Wurdz - Tommie Matherne</description>
+    <title>changeOfPlans on Gud wit Wurdz - Tommie Matherne</title>
+    <link>/tags/changeofplans/</link>
+    <description>Recent content in changeOfPlans on Gud wit Wurdz - Tommie Matherne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Mon, 16 Jan 2023 17:45:29 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 17:45:29 -0700</lastBuildDate><atom:link href="/tags/changeofplans/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quick Update 2</title>
       <link>/posts/quick-update2/</link>
@@ -28,61 +28,6 @@
 &lt;p&gt;So, that was a lot of words, what does that mean for this site going forward? Well, for starters, while I&amp;rsquo;m not likely to do away completely with the HTML/CSS/JavaScript track, it isn&amp;rsquo;t going to be a priority. Honestly, I now the information, and know it well, but other than the JavaScript side, it just isn&amp;rsquo;t me. Those other parts are presentation, and I&amp;rsquo;m a newt, remember? I&amp;rsquo;m going to keep going with teaching, because I have quite a few transferable skills. Recently, I got involved in a study group for those breaking into data analysis and I am looking at the information on different aspects that cross over to my old jobs, and I can understand why people are frustrated thinking they can never get this. Do you really need an eight hour tutorial on database design where the first hour and a half is spent trying to clumsily define what data and a database are? Or, as a beginner, do you need just enough information to be able to take an already known-clean data set and shove it into a database in order to begin some analysis?&lt;/p&gt;
 &lt;p&gt;Frankly, I think getting people up and running with the tools they need as fast as possible beats the hell out of that. You shouldn&amp;rsquo;t need to take in enough information to be an entry-level database admin in order to get up and running with entry-level data analysis. For goodness sake, if that were the case, the field is vastly underpaid! So I&amp;rsquo;m going to pivot a bit, and give a few tutorials on how to take a known clean dataset, how to evaluate that dataset in order to build the database it needs, and then import the damn thing. Then analyze it, and possibly use HTML/CSS/JavaScript to make a static page to publish a report. Then, if you are still interested, we&amp;rsquo;ll go above that and get some not so clean data, and work on the more advanced stuff. But not until we already have something to show for ourselves, dammit!&lt;/p&gt;
 &lt;p&gt;Until then, thanks for bearing with me through all of that. I look forward to posting again, soon.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Tutorial 1 Getting Started With HTML</title>
-      <link>/posts/tutorial-1-getting-started-with-html/</link>
-      <pubDate>Fri, 06 Jan 2023 14:31:45 -0700</pubDate>
-      
-      <guid>/posts/tutorial-1-getting-started-with-html/</guid>
-      <description>Let&amp;rsquo;s Go! So, here we go. The set up tutorial. If you remember the old blog about this, don&amp;rsquo;t panic. This is going to be a lot easier. Set up is streamlined a lot. In fact, we are going to get into talking about HTML in this tutorial, set up and first steps are all in one lesson now! Let&amp;rsquo;s f^&amp;amp;centkin&#39; do this!
-Editor Set Up So, if you are interested in web development, I&amp;rsquo;m going to assume you have access to the internet in some fashion.</description>
-      <content>&lt;h1 id=&#34;lets-go&#34;&gt;Let&amp;rsquo;s Go!&lt;/h1&gt;
-&lt;p&gt;So, here we go. The set up tutorial. If you remember the old blog about this, don&amp;rsquo;t panic. This is going to be a lot easier. Set up is streamlined a lot. In fact, we are going to get into talking about HTML in this tutorial, set up and first steps are all in one lesson now! Let&amp;rsquo;s f^&amp;amp;centkin&#39; do this!&lt;/p&gt;
-&lt;h1 id=&#34;editor-set-up&#34;&gt;Editor Set Up&lt;/h1&gt;
-&lt;p&gt;So, if you are interested in web development, I&amp;rsquo;m going to assume you have access to the internet in some fashion. Thus, we are going to edit the code online. If you go to &lt;a href=&#34;https://www.codepen.io&#34;&gt;CodePen&lt;/a&gt;, you can sign up for free, and have at your fingertips editors with colored syntax highlighting for HTML, CSS, and JavaScript. This should open this set of instruction for everyone, whether you have a desktop, laptop, or even just your cell phone.&lt;/p&gt;
-&lt;p&gt;Once you are signed up, and signed in, of course, just click on the menu and choose &amp;ldquo;New Pen&amp;rdquo;. There you go. You are set up. The editors are separated for HTML, CSS, and JavaScript, either in separate editors available on your screen, or through tabs, depending on the size of your screen. There you are. You&amp;rsquo;re all set up. Seriously, that&amp;rsquo;s it. Why are you still here? Move on to the next section.&lt;/p&gt;
-&lt;h1 id=&#34;intro-to-html&#34;&gt;Intro to HTML&lt;/h1&gt;
-&lt;p&gt;The most important thing with learning anything with computers, from HTML to C++ to a word processor, is to play. So for today, I&amp;rsquo;m not going to cover the syntax and usage of HTML. I&amp;rsquo;m simply going to introduce the documentation and how to navigate it. After you become familiar with how the documentation is laid out, read it and play a bit. Don&amp;rsquo;t worry about the CSS and JavaScript editors in CodePen for now. Just play around with the HTML and what it does when you put it on the screen.&lt;/p&gt;
-&lt;p&gt;The best documentation on the internet for HTML syntax is the Mozilla Developer Network (MDN) documents. These can be found &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML&#34;&gt;here&lt;/a&gt;. It is honestly best if you bookmark this. This reference is invaluable. Another thing to keep in mind is that the Mozilla Foundation, the folks that maintain this reference, as well as make the Firefox web browser, is a non-profit. There is no sign up, and none of your data is tracked. Because of that, Mozilla is funded through donations. If you can, please &lt;a href=&#34;https://donate.mozilla.org/en-US/&#34;&gt;donate&lt;/a&gt; to Mozilla so they can keep up their great work.&lt;/p&gt;
-&lt;p&gt;Just to come up to speed on the documentation, if you click on the menu on your phone&amp;rsquo;s screen at the top-left (or in the left sidebar on your computer screen), you will see a section at the top that says &lt;strong&gt;Tutorials&lt;/strong&gt;. Please read through at least the HTML Basics tutorial. It is best if you can read through the entirety of the four tutorials listed, but they are very lengthy and dense, so I understand if you don&amp;rsquo;t. Just remember that they are there and come back to them when you can.&lt;/p&gt;
-&lt;p&gt;And don&amp;rsquo;t worry if it takes several read-throughs before you begin to understand what they are talking about. If you don&amp;rsquo;t get it, simply take notes on what is being said, plug it into CodePen, and then change it a bit to see how it affects the outcome, and finally re-read that part of the tutorial. We will go through some things in the next few weeks, but for the most part, these documents are well-written enough that I am going to trust that between reading and experimenting, you can figure it out.&lt;/p&gt;
-&lt;p&gt;So, until next week&amp;rsquo;s tutorial, read through the docs, have CodePen open while you do, and experiment. Next time, we will go through some of the most frequently used tags in HTML and speak about what they do, and get to where we can get something resembling a web page up in front of us. The following week, we will cover some of the more advanced topics of attributes to tags and their effects, as well as building our first forms and tables.&lt;/p&gt;
-&lt;p&gt;In week four, we move on to CSS. As you can see, this is &lt;em&gt;very&lt;/em&gt; fast paced. I am relying on you taking some part of the week between each post to get your hands dirty in CodePen and actually making a few shitty web pages. And yes, they are shitty. First web pages always are, especially when dealing with only HTML. Don&amp;rsquo;t fear this. We development is a creative endeavor akin to writing, and &lt;a href=&#34;https://wrd.as.uky.edu/sites/default/files/1-Shitty%20First%20Drafts.pdf&#34;&gt;shitty first drafts&lt;/a&gt; are invaluable in writing!&lt;/p&gt;
-&lt;p&gt;Until next week, have fun, and keep learning!&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Whats Next</title>
-      <link>/posts/whats-next/</link>
-      <pubDate>Thu, 05 Jan 2023 13:25:14 -0700</pubDate>
-      
-      <guid>/posts/whats-next/</guid>
-      <description>What&amp;rsquo;s Next Here So just an update now that I&amp;rsquo;ve decided what to do with this site. This update is actually a day late from when it was supposed to go out.
-That&amp;rsquo;s because on Wednesday&amp;rsquo;s I&amp;rsquo;m going to be adding updates on what I&amp;rsquo;m working on beside the tutorials, or launch a completed project. Fridays, I will be posting a tutorial akin to what was on the now defunct blog site.</description>
-      <content>&lt;h1 id=&#34;whats-next-here&#34;&gt;What&amp;rsquo;s Next Here&lt;/h1&gt;
-&lt;p&gt;So just an update now that I&amp;rsquo;ve decided what to do with this site. This update is actually a day late from when it was supposed to go out.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s because on Wednesday&amp;rsquo;s I&amp;rsquo;m going to be adding updates on what I&amp;rsquo;m working on beside the tutorials, or launch a completed project. Fridays, I will be posting a tutorial akin to what was on the now defunct blog site. It will be started all over from scratch, but with a more compact view of HTML and CSS, and with minimal set up! Following along this time will not require any installation on your computer, and can even be followed along with on your phone. The internet is amazing, ain&amp;rsquo;t it?&lt;/p&gt;
-&lt;p&gt;So that&amp;rsquo;s it, just a short update. Check in tomorrow for the set up and a look into the first steps of HTML. Fair warning, because of the more compact view of HTML that will be taken, there will be more reading and work off of this blog.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>What to Expect</title>
-      <link>/posts/what-to-expect/</link>
-      <pubDate>Sun, 01 Jan 2023 17:09:56 -0700</pubDate>
-      
-      <guid>/posts/what-to-expect/</guid>
-      <description>COMING SOON Within the coming weeks, this site will expand greatly beyond the current static blog you are reading now. This is, after all, my portfolio! It should show this, I think, if it is going to be effective in helping me get a job.
-First thing that will be done, I am going to be uploading some JavaScript games. Simple games will be the first as I gain some further familiarity with using JavaScript to make games, but gaining in complexity quickly.</description>
-      <content>&lt;h1 id=&#34;coming-soon&#34;&gt;COMING SOON&lt;/h1&gt;
-&lt;p&gt;Within the coming weeks, this site will expand greatly beyond the current static blog you are reading now. This is, after all, my portfolio! It should show this, I think, if it is going to be effective in helping me get a job.&lt;/p&gt;
-&lt;p&gt;First thing that will be done, I am going to be uploading some JavaScript games. Simple games will be the first as I gain some further familiarity with using JavaScript to make games, but gaining in complexity quickly. As I will be creating my own art assets, the games pages will be linking to the repositories with that art. Having no musical talent beyond karaoke (and then only in my own mind), the sound in the games will be properly credited below each game.&lt;/p&gt;
-&lt;p&gt;Next, I will be putting up more posts as were previously seen on &lt;a href=&#34;https://www.blog.gudwitwurdz.click&#34;&gt;blog.gudwitwurdz.click&lt;/a&gt;. Starting with porting over those previous posts and then expanding them. If you were following that (who are you?), those posts will continue, stay tuned.&lt;/p&gt;
-&lt;p&gt;Finally, this site is currently built with Hugo using the Terminal template. Credit is at the bottom of every page if you would like to contact the creator of the template. I will be looking into creating my own template and personalizing this template, as well.&lt;/p&gt;
 </content>
     </item>
     
