@@ -7,7 +7,99 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Mon, 16 Jan 2023 17:45:29 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Mar 2023 17:17:57 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lesson Plan</title>
+      <link>/posts/lesson-plan/</link>
+      <pubDate>Sat, 11 Mar 2023 17:17:57 -0700</pubDate>
+      
+      <guid>/posts/lesson-plan/</guid>
+      <description>Linux  Command Line Basics  pwd, cd, ls, and flags mkdir &amp;amp; rmdir, rm, touch man and &amp;ndash;help cp, mv, locate   Intermediate Command Line  echo, cat, and pipes editors (vi/m, nano) sudo, df, du tar, zip, unzip uname, chmod, ping   Terminal Text Manipulation  awk, sed, grep, sort, cut, uniq, fmt, tr, nl, wc   Processes  ps, top, htop, atop, lsof kill, killall   Performance  nmon, iostat, sar, vmstat   Network  traceroute, mtr, ping, nmap, netstat, ufw/firewalld, tcpdump, iptables/nftables, dig, scp   Special Note: POSIX Bash/shell scripting  OS Admin Concepts  initd systemd virtualization/containers memory/storage file systems  Programming Setup  Hugo and Quarto Git Languages  Python R Javascript/npm    </description>
+      <content>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Command Line Basics
+&lt;ul&gt;
+&lt;li&gt;pwd, cd, ls, and flags&lt;/li&gt;
+&lt;li&gt;mkdir &amp;amp; rmdir, rm, touch&lt;/li&gt;
+&lt;li&gt;man and &amp;ndash;help&lt;/li&gt;
+&lt;li&gt;cp, mv, locate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Intermediate Command Line
+&lt;ul&gt;
+&lt;li&gt;echo, cat, and pipes&lt;/li&gt;
+&lt;li&gt;editors (vi/m, nano)&lt;/li&gt;
+&lt;li&gt;sudo, df, du&lt;/li&gt;
+&lt;li&gt;tar, zip, unzip&lt;/li&gt;
+&lt;li&gt;uname, chmod, ping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Terminal Text Manipulation
+&lt;ul&gt;
+&lt;li&gt;awk, sed, grep, sort, cut, uniq, fmt, tr, nl, wc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Processes
+&lt;ul&gt;
+&lt;li&gt;ps, top, htop, atop, lsof&lt;/li&gt;
+&lt;li&gt;kill, killall&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Performance
+&lt;ul&gt;
+&lt;li&gt;nmon, iostat, sar, vmstat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Network
+&lt;ul&gt;
+&lt;li&gt;traceroute, mtr, ping, nmap, netstat, ufw/firewalld, tcpdump, iptables/nftables, dig, scp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Special Note: POSIX&lt;/li&gt;
+&lt;li&gt;Bash/shell scripting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;os-admin-concepts&#34;&gt;OS Admin Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;initd&lt;/li&gt;
+&lt;li&gt;systemd&lt;/li&gt;
+&lt;li&gt;virtualization/containers&lt;/li&gt;
+&lt;li&gt;memory/storage&lt;/li&gt;
+&lt;li&gt;file systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;programming&#34;&gt;Programming&lt;/h2&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo and Quarto&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Languages
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;R&lt;/li&gt;
+&lt;li&gt;Javascript/npm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Another Switch Up</title>
+      <link>/posts/another-switch-up/</link>
+      <pubDate>Sat, 11 Mar 2023 16:30:01 -0700</pubDate>
+      
+      <guid>/posts/another-switch-up/</guid>
+      <description>Yeah, I know I know, less focus than a 1940s film projector. This time, though, I&amp;rsquo;m pretty sure I&amp;rsquo;ve got the direction I actually want to go. I enjoy teaching concepts and only enough specificity to get things done. Current plan is to create a learning path series that will carry a person from first steps with Linux all the way through to building a personal project that relies on a backbone that can be transferred to real-world applications and re-created to produce actual results.</description>
+      <content>&lt;h3 id=&#34;yeah-i-know&#34;&gt;Yeah, I know&lt;/h3&gt;
+&lt;p&gt;I know, less focus than a 1940s film projector. This time, though, I&amp;rsquo;m pretty sure I&amp;rsquo;ve got the direction I actually want to go. I enjoy teaching concepts and only enough specificity to get things done. Current plan is to create a learning path series that will carry a person from first steps with Linux all the way through to building a personal project that relies on a backbone that can be transferred to real-world applications and re-created to produce actual results.&lt;/p&gt;
+&lt;p&gt;This began out of a conversation with a friend saying she wishes she could do the things I do. My response, probably a bit flippantly, was to say that she could. Anyone can. The things I do for work and fun with a computer are matters of skills, not &amp;ldquo;talent&amp;rdquo;. Of course, that led to a conversation, fueled by the excellent &lt;a href=&#34;https://roadmap.sh/devops&#34;&gt;DevOps Roadmap&lt;/a&gt;, about everything that I put together in order to do these things.&lt;/p&gt;
+&lt;p&gt;It also made me realize, I look at that roadmap and think, &amp;ldquo;Yeah, that&amp;rsquo;s about right&amp;rdquo;. From the outside looking in, that roadmap is intimidating as hell. Eliciting thoughts of &amp;ldquo;How the hell do I learn all of that?&amp;rdquo; The short answer, though, is: You don&amp;rsquo;t!&lt;/p&gt;
+&lt;p&gt;Within each section, there are solid topics to learn, but more importantly, there are concepts to grasp. In correlation with these concepts, there are tools at your disposal. So long as you can grasp the concepts, and understand the tools, you can work with them to build and do some things that are impressive. So that is what I&amp;rsquo;m going to break these things down to, concepts and tools.&lt;/p&gt;
+&lt;p&gt;Just like real tools, knowing what they are used for, and understanding how they can apply are limiting knowledge. Actually putting the tools to use are where things get interesting, and actual learning begins. You can learn the intricacies of mitre saws, laser levels, nail sizes, joinery&amp;hellip; But until you actually try to put together a table, you aren&amp;rsquo;t a carpenter. So while we will begin with concepts, very quickly, we are going to move forward to projects.&lt;/p&gt;
+&lt;p&gt;The projects I put forward are NOT to be followed. They are to be thought of as inspiration. To continue the carpentry comparison, think of it as someone watching an episode of The New Yankee Workshop (that&amp;rsquo;s still on, right?), and deciding they are going to build a chair that way. Their chair will be their own. You might still recognize it as an Adirondack, but it will not look the same. Some parts of construction, some design concepts in the aesthetic, and, frankly, the worksmanship of it will not match. That&amp;rsquo;s a good thing. Individualize the work. Make it your own, change what it looks like, how it works, even some underlying concepts. Take your time, do the project for you, just use the tools I give you. That&amp;rsquo;s how you learn to become a useful programmer.&lt;/p&gt;
+&lt;p&gt;Next time, a roadmap of what is going to happen. Please note, that roadmap isn&amp;rsquo;t finished being drawn up. It may change, it may grow, it may shrink. During each time that the articles for each part are published, the roadmap will be updated to link to them. If you want to follow along, it may be a good idea to bookmark it.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Quick Update 2</title>
       <link>/posts/quick-update2/</link>

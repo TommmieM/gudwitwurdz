@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plan on Gud wit Wurdz - Tommie Matherne</title>
+    <link>/tags/plan/</link>
+    <description>Recent content in Plan on Gud wit Wurdz - Tommie Matherne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2023, Tommie Matherne</copyright>
+    <lastBuildDate>Sat, 11 Mar 2023 17:17:57 -0700</lastBuildDate><atom:link href="/tags/plan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lesson Plan</title>
+      <link>/posts/lesson-plan/</link>
+      <pubDate>Sat, 11 Mar 2023 17:17:57 -0700</pubDate>
+      
+      <guid>/posts/lesson-plan/</guid>
+      <description>Linux  Command Line Basics  pwd, cd, ls, and flags mkdir &amp;amp; rmdir, rm, touch man and &amp;ndash;help cp, mv, locate   Intermediate Command Line  echo, cat, and pipes editors (vi/m, nano) sudo, df, du tar, zip, unzip uname, chmod, ping   Terminal Text Manipulation  awk, sed, grep, sort, cut, uniq, fmt, tr, nl, wc   Processes  ps, top, htop, atop, lsof kill, killall   Performance  nmon, iostat, sar, vmstat   Network  traceroute, mtr, ping, nmap, netstat, ufw/firewalld, tcpdump, iptables/nftables, dig, scp   Special Note: POSIX Bash/shell scripting  OS Admin Concepts  initd systemd virtualization/containers memory/storage file systems  Programming Setup  Hugo and Quarto Git Languages  Python R Javascript/npm    </description>
+      <content>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Command Line Basics
+&lt;ul&gt;
+&lt;li&gt;pwd, cd, ls, and flags&lt;/li&gt;
+&lt;li&gt;mkdir &amp;amp; rmdir, rm, touch&lt;/li&gt;
+&lt;li&gt;man and &amp;ndash;help&lt;/li&gt;
+&lt;li&gt;cp, mv, locate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Intermediate Command Line
+&lt;ul&gt;
+&lt;li&gt;echo, cat, and pipes&lt;/li&gt;
+&lt;li&gt;editors (vi/m, nano)&lt;/li&gt;
+&lt;li&gt;sudo, df, du&lt;/li&gt;
+&lt;li&gt;tar, zip, unzip&lt;/li&gt;
+&lt;li&gt;uname, chmod, ping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Terminal Text Manipulation
+&lt;ul&gt;
+&lt;li&gt;awk, sed, grep, sort, cut, uniq, fmt, tr, nl, wc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Processes
+&lt;ul&gt;
+&lt;li&gt;ps, top, htop, atop, lsof&lt;/li&gt;
+&lt;li&gt;kill, killall&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Performance
+&lt;ul&gt;
+&lt;li&gt;nmon, iostat, sar, vmstat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Network
+&lt;ul&gt;
+&lt;li&gt;traceroute, mtr, ping, nmap, netstat, ufw/firewalld, tcpdump, iptables/nftables, dig, scp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Special Note: POSIX&lt;/li&gt;
+&lt;li&gt;Bash/shell scripting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;os-admin-concepts&#34;&gt;OS Admin Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;initd&lt;/li&gt;
+&lt;li&gt;systemd&lt;/li&gt;
+&lt;li&gt;virtualization/containers&lt;/li&gt;
+&lt;li&gt;memory/storage&lt;/li&gt;
+&lt;li&gt;file systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;programming&#34;&gt;Programming&lt;/h2&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo and Quarto&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Languages
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;R&lt;/li&gt;
+&lt;li&gt;Javascript/npm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
