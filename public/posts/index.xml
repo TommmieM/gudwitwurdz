@@ -67,7 +67,7 @@ Next is the &lt;strong&gt;DESCRIPTION&lt;/strong&gt; portion of the man page. Th
 &lt;ul&gt;
 &lt;li&gt;Command Line Basics
 &lt;ul&gt;
-&lt;li&gt;pwd, cd, ls, and flags&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../lesson-1-command-line-starters&#34;&gt;pwd, cd, ls, and flags&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;mkdir &amp;amp; rmdir, rm, touch&lt;/li&gt;
 &lt;li&gt;man and &amp;ndash;help&lt;/li&gt;
 &lt;li&gt;cp, mv, locate&lt;/li&gt;

@@ -15,7 +15,7 @@ color = "" #color from the theme settings
 
 ## Linux
  - Command Line Basics
-   - pwd, cd, ls, and flags
+   - [pwd, cd, ls, and flags](../lesson-1-command-line-starters)
    - mkdir & rmdir, rm, touch
    - man and --help
    - cp, mv, locate
