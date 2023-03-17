@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/commands/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/cp/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/directories/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/files/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/posts/lesson-2-directories-and-files/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/locate/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/mkdir/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/mv/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/rm/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/rmdir/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
+    <loc>/tags/touch/</loc>
+    <lastmod>2023-03-16T18:57:00-06:00</lastmod>
+  </url><url>
     <loc>/tags/cd/</loc>
     <lastmod>2023-03-12T14:52:08-06:00</lastmod>
   </url><url>
@@ -11,25 +56,13 @@
     <loc>/tags/flags/</loc>
     <lastmod>2023-03-12T14:52:08-06:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
-  </url><url>
     <loc>/posts/lesson-1-command-line-starters/</loc>
-    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
-  </url><url>
-    <loc>/tags/linux/</loc>
     <lastmod>2023-03-12T14:52:08-06:00</lastmod>
   </url><url>
     <loc>/tags/ls/</loc>
     <lastmod>2023-03-12T14:52:08-06:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
-  </url><url>
     <loc>/tags/pwd/</loc>
-    <lastmod>2023-03-12T14:52:08-06:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2023-03-12T14:52:08-06:00</lastmod>
   </url><url>
     <loc>/tags/devops/</loc>

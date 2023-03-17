@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Lesson 2 Directories and Files :: Gud wit Wurdz - Tommie Matherne</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Now that was know where we are, what can we do with it? Making and removing directories and files" />
+<meta name="keywords" content="Linux, commands, directories, files" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/lesson-2-directories-and-files/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="/img/theme-colors/green.png">
+  <link rel="apple-touch-icon" href="/img/theme-colors/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lesson 2 Directories and Files">
+<meta property="og:description" content="Now that was know where we are, what can we do with it? Making and removing directories and files" />
+<meta property="og:url" content="/posts/lesson-2-directories-and-files/" />
+<meta property="og:site_name" content="Gud wit Wurdz - Tommie Matherne" />
+
+  
+  
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2023-03-16 18:57:00 -0600 MDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Gud Wit Wurdz - Tommie Matherne
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/lesson-2-directories-and-files/">Lesson 2 Directories and Files</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2023-03-16 ::
+        
+      </time>
+    
+    
+      <span class="post-author">Tommie Matherne</span>
+    
+    
+      <span class="post-reading-time">:: 10 min read (2125 words)</span>
+    
+  </div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/linux/">Linux</a>&nbsp;
+      
+      #<a href="/tags/commands/">commands</a>&nbsp;
+      
+      #<a href="/tags/files/">files</a>&nbsp;
+      
+      #<a href="/tags/directories/">directories</a>&nbsp;
+      
+      #<a href="/tags/mkdir/">mkdir</a>&nbsp;
+      
+      #<a href="/tags/rmdir/">rmdir</a>&nbsp;
+      
+      #<a href="/tags/cp/">cp</a>&nbsp;
+      
+      #<a href="/tags/mv/">mv</a>&nbsp;
+      
+      #<a href="/tags/locate/">locate</a>&nbsp;
+      
+      #<a href="/tags/touch/">touch</a>&nbsp;
+      
+      #<a href="/tags/rm/">rm</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="lets-be-manipulative">Let&rsquo;s Be Manipulative<a href="#lets-be-manipulative" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>So now that we have an idea of what our filesystem looks like and how to traverse it, how do we change it? Let&rsquo;s go over a few commands to get the basics on creating and deleting files and folders, as well as moving them around. We are also going to talk a bit about wild cards that you can include to lower the amount of typing. Well, enough talk, open your terminal and let&rsquo;s get started!</p>
+<h3 id="the-power-of-creation">The Power of Creation<a href="#the-power-of-creation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>While moving around the file system, you may have noticed that your Linux system comes with quite a large set of files and folders already included. Especially if you ventured out of just your home folder. For the most part, however, most of what you will do as  a user of a system involves only what is in your home folder, and that area is pretty bare.</p>
+<p>To keep things rather tidy, you will likely want to make directories inside your directories, and files inside of those. So, let&rsquo;s get that sorted now, shall we? Assuming you began from your home folder, type in <code>cd Documents</code> to get to your Documents directory. If you run <code>ls</code> to list the contents of this folder, it will likely not show any files or folders (unless of course, you have been studying ahead. If that&rsquo;s the case, good on you!).</p>
+<p>Again, organization is always a good thing, so how about we drop a directory in here before we start creating files out of nowhere? Type in <code>man mkdir</code> to get a look at what the <code>mkdir</code> program does for us. The command and the options for it are pretty straightforward, and I&rsquo;m not going to insult your intelligence by going over all of them. Most important information, right at the top, &ldquo;Make Directories&rdquo;, and it does just what it says on the tin.</p>
+<p>So type in <code>mkdir foo</code>. You don&rsquo;t have to go with the name <code>foo</code> there, that&rsquo;s just a common placeholder in tutorials. Anything after the command <code>mkdir</code> is going to be the name of the directory that is created where you currently are. You can prove this by once again tpying <code>ls</code>. The listing should show a folder named <code>foo</code>, or whatever you chose to name that folder. If it doesn&rsquo;t, go back in your history and look for errors, chances are you may have made a typo in the command like I did when I was following along with my own tutorial! No shame in that, just check the spelling, and try again.</p>
+<p>Going back to last lesson, if we use the <code>ls</code> command, we can list the contents of the new folder if we pass the name of the folder to the command. Let&rsquo;s try that, <code>ls ./foo</code>. Remember, the <code>.</code> is a shorthand for the current directory, and <code>foo</code> can be replaced with whatever you named that folder you just created. The command should come back empty on this one, since we just created the directory and didn&rsquo;t put anything in it.</p>
+<p>To do that, unless you want to dig into downloading things from the internet right away from the command line, we can use the <code>touch</code> command. Go ahead, try reading through <code>man touch</code> to see what that is all about. Go ahead, I&rsquo;ll wait for you, and join you back in the next paragraph.</p>
+<p>So this one seems a bit more complicated, doesn&rsquo;t it? It is important to know what it says there. &ldquo;Change file timestamps&rdquo;. For our purposes, the more important information is in the second section, second paragraph, though. &ldquo;A FILE argument that does not exist is created empty&hellip;&rdquo; If you ever do get into a role where you have to do a forensics investigation, however, keep that first part in mind. <code>touch</code> can change the creation and access dates that show up in the system for a file, so you cannot just believe what you see!</p>
+<p>Anyway, to the matter at hand, let&rsquo;s pass it a non-existent file and get it created. Try <code>touch ./foo/bar</code>. Again, <code>bar</code> is just one of those placeholder words used in beginner tutorials a lot when the author has no imagination and a lot of geekiness, you can name the file whatever you would like. Now, if you type in <code>ls</code>, you&rsquo;ll see&hellip; <code>bar</code>? What? That&rsquo;s the folder we created?</p>
+<p>We never changed directories to get into the folder, but gave the directory name as part of the argument for <code>touch</code>. What are the results of <code>ls ./foo</code>?  There is our file, safe and sound. This is another important idea to keep in mind: you can manipulate any part of the system from wherever you are in the system, so long as you know the path to get there!</p>
+<h3 id="an-bit-of-misdirection">An bit of misdirection<a href="#an-bit-of-misdirection" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Two commands that we will go into detail about later are <code>echo</code> and <code>cat</code>. For now, though, we will use them. I won&rsquo;t have you read the <code>man</code> pages for these two just yet, but you can if you want to. Who am I to stop you? I&rsquo;m just words on a screen.</p>
+<p>Right now, we have an empty file. We can change that, and prove that we have changed it with the above two commands. The <code>cat</code> command prints the text in a file to the terminal. Right now, if we try <code>cat bar</code>, nothing happens, because the file is empty.</p>
+<p>However, <code>echo</code> is a much more interesting command. Try <code>echo &quot;Hello, world!&quot;</code> . You should see the words <code>Hello, world!</code> printed back before your prompt returns. The fun of echo, though, comes in some built in utilities of the command line. Namely, redirecting input.</p>
+<p>We can do this with what are called the direction operators. The first we are going to use is <code>&gt;</code>. Try <code>echo &quot;Hello, world!&quot; &gt; bar</code>. The command prompt should return as normal with nothing printed after the command and before the prompt. If you do <code>cat bar</code> now, though, it should output <code>&quot;Hello, world!&quot;</code>. You have just written information to the file!</p>
+<p>If you try that again, and put in <code>echo &quot;Good-bye!&quot; &gt; bar</code>. When you try <code>cat bar</code>, it writes out <code>Good-Bye!</code>. What happened to the greeting? It was overwritten. When you use the <code>&gt;</code> direction operator in the terminal, it does what is called a destructive direction to the file. Anything that was previously in the file is removed, and the new data is written.</p>
+<p>Let&rsquo;s put our greeting back, <code>echo &quot;Hello, world!&quot; &gt; bar</code>. If you&rsquo;d like, you can <code>cat bar</code> to verify, it now says <code>Hello, World!</code>. If we want to add more to the file without losing what is already there, the non-destructive operator has our back. <code>echo &quot;Good-bye!&quot; &gt;&gt; bar</code>. Note the double <code>&gt;&gt;</code>, that is what makes it non-destructive.</p>
+<p>For now, it isn&rsquo;t important, but we can actually make things flow in the other direction, as well. We have no occasion to use this now, but when we are building longer, more complicated lines, you may need to read information from a file in a part of it. At this point, the <code>&lt;</code> and <code>&lt;&lt;</code> operators will direct that flow of data.</p>
+<h3 id="rearranging-things">Rearranging things<a href="#rearranging-things" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Right now, the file we made sits in a directory we made, inside of our Documents directory. While I mentioned earlier that organization is important, we are about to mess things up a bit. Get back out of the <code>foo</code> directory and back into the Documents. You have all the tools needed, I&rsquo;m not going to give you the code for this one.</p>
+<p>Got back there? Good! Knew you had it in you! Those shortcuts we&rsquo;ve been mentioning are about to come in handy. Let&rsquo;s say for a moment that you want a copy of <code>bar</code> here in Documents. While it is a rather simple bit of text, it would get cumbersome later to recreate a file that may be a few thousand lines long. There are easier ways: copying and moving files.</p>
+<p>Copying files can get rather wild. If you read <code>man cp</code>, the man page for the <code>cp</code> command, you will quickly get to realizing that there are a few different ways to use the command. We are about to go through all of those ways.</p>
+<p>First, we will copy the file to a different file name within the same folder with a different name. To do this, we are going to use the following: <code>cp ./foo/bar ./foo/baz</code>. Again, <code>baz</code> is just a placeholder, use whatever name you like. We use the file path as the terminal is currently working in the Documents directory, so we need to point first to the <code>foo/</code> directory before specifying our file. Likewise, if we try to <code>ls</code> the contents of <code>foo/</code>, you can see both the <code>bar</code> and <code>baz</code> files sitting there. Further, with <code>cat</code> and the file path you can confirm that both files contain the same data.</p>
+<p>It seems a bit silly to have two files with the same information in the same directory, so we are going to get rid of one of them. To do that, we use <code>rm</code>. <code>man rm</code> gives more information. This is the remove command, and it does just what it says on the tin, which is probably a phrase that is getting tiring at this point. But it is true. Let&rsquo;s try <code>rm ./foo/baz</code>, and then <code>ls ./foo</code> one more time. Yup, it&rsquo;s gone!</p>
+<p>For the sake of argument, though, go ahead and re-copy that file into existence. I promise, this will make sense soon. In fact, let&rsquo;s get into how. So if you <code>ls foo</code> now (that&rsquo;s right, you don&rsquo;t need the <code>./</code>), you should see both files sitting in that folder. Now, let&rsquo;s say you want those files in the Documents directory instead. We could copy them and then remove them from <code>foo</code>, but that seems a bit overkill. There has to be an easier way, right?</p>
+<p>Enter <code>mv</code>. If you read the <code>man</code> page, you will see that the use and options between <code>mv</code> and <code>cp</code> are very similar. Other than the program name, commands written with the two will both work if you just change the program name at the beginning. For the most part. Some flag sets are different, but other than that, they are very similar. Keep that in mind as we go through this part, because we are going to do a move that could work just as well for copying files.</p>
+<p>For instance to move both files to the Documents directory, the command would be <code>mv ./foo/bar ./foo/baz .</code>. The two file names are both provided, the final <code>.</code> denotes the place we want the files to be moved to. So if you do <code>ls</code> now, you can see that <code>foo/</code>, <code>bar</code>, and <code>baz</code> are all here.</p>
+<p>There is one more useful thing that <code>mv</code> can do for you as well. Try <code>mv baz bas</code>. The file name <code>bas</code> did not exist when you did this, but if you do <code>ls</code> now, the contents of Documents are <code>foo/</code>, <code>bar</code>, and <code>bas</code>. <code>baz</code> no longer exists. And if you <code>cat bas</code>, you see that the contents are the same. You can use <code>mv</code> to rename your files. That&rsquo;s enough for now, though. Shall we clean up?</p>
+<h3 id="the-power-of-destruction">The Power of Destruction<a href="#the-power-of-destruction" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Just as we can create files and directories, we can remove them. For instance, currently, we have an empty directory. <code>rmdir</code> will help us get rid of it. I will actually not walk you through this one! Read the <code>man</code> page if needed, and see if you can get <code>foo/</code> gone.</p>
+<p>Keep in mind, this will only work if the directory is empty. If there are any files in the directory, you will recieve an error. That&rsquo;s Linux&rsquo;s way of keeping you from stepping on your own toes and deleting files you didn&rsquo;t mean to. There is a way around this, hidden in the <code>man</code> page. I encourage you to recreate a new directory and put a file or two in it, and try to delete the directory along with it&rsquo;s contents after we are done.</p>
+<p>Similarly, as we showed earlier, <code>rm</code> can get rid of those identical files in your Documents folder, but can actually do it both at the same time! I&rsquo;m sure you can figure that out as well&hellip; Yes, I know, lazy of me. I&rsquo;m tired, what can I say.</p>
+<p>Again, I encourage you to read those <code>man</code> pages, play around in your Home folders, and see what you can do. Next time, we will actually take that leap mentioned earlier, and download a file from the internet, and do some manipulation of it&rsquo;s contents. It promises to cover more commands, but actually take less time to read!</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/lesson-1-command-line-starters/">
+                <span class="button__text">Lesson 1 Command Line Starters</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>2023, Tommie Matherne</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

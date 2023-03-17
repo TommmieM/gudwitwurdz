@@ -7,7 +7,117 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Sun, 12 Mar 2023 14:52:08 -0600</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Mar 2023 18:57:00 -0600</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>commands</title>
+      <link>/tags/commands/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/commands/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>cp</title>
+      <link>/tags/cp/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/cp/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>directories</title>
+      <link>/tags/directories/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/directories/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>files</title>
+      <link>/tags/files/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/files/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>locate</title>
+      <link>/tags/locate/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/locate/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>mkdir</title>
+      <link>/tags/mkdir/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/mkdir/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>mv</title>
+      <link>/tags/mv/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/mv/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>rm</title>
+      <link>/tags/rm/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/rm/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>rmdir</title>
+      <link>/tags/rmdir/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/rmdir/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>touch</title>
+      <link>/tags/touch/</link>
+      <pubDate>Thu, 16 Mar 2023 18:57:00 -0600</pubDate>
+      
+      <guid>/tags/touch/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>cd</title>
       <link>/tags/cd/</link>
@@ -34,16 +144,6 @@
       <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
       
       <guid>/tags/flags/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>/tags/linux/</link>
-      <pubDate>Sun, 12 Mar 2023 14:52:08 -0600</pubDate>
-      
-      <guid>/tags/linux/</guid>
       <description></description>
       <content></content>
     </item>
