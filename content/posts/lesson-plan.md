@@ -16,9 +16,9 @@ color = "" #color from the theme settings
 ## Linux
  - Command Line Basics
    - [pwd, cd, ls, and flags](../lesson-1-command-line-starters)
-   - mkdir & rmdir, rm, touch
-   - man and --help
-   - cp, mv, locate
+   - [mkdir & rmdir, rm, touch](../lesson-2-directories-and-files)
+   - [man and --help](../lesson-1-command-line-starters)
+   - [cp, mv](..lesson-2-directories-and-files), locate
  - Intermediate Command Line
    - echo, cat, and pipes
    - editors (vi/m, nano)
@@ -53,3 +53,6 @@ color = "" #color from the theme settings
    - Python
    - R 
    - Javascript/npm
+
+### Project One
+ - [Planning a project](../lesson-3-project-planning-1)

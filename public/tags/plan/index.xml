@@ -14,15 +14,15 @@
       <pubDate>Sat, 11 Mar 2023 17:17:57 -0700</pubDate>
       
       <guid>/posts/lesson-plan/</guid>
-      <description>Linux  Command Line Basics  pwd, cd, ls, and flags mkdir &amp;amp; rmdir, rm, touch man and &amp;ndash;help cp, mv, locate   Intermediate Command Line  echo, cat, and pipes editors (vi/m, nano) sudo, df, du tar, zip, unzip uname, chmod, ping   Terminal Text Manipulation  awk, sed, grep, sort, cut, uniq, fmt, tr, nl, wc   Processes  ps, top, htop, atop, lsof kill, killall   Performance  nmon, iostat, sar, vmstat   Network  traceroute, mtr, ping, nmap, netstat, ufw/firewalld, tcpdump, iptables/nftables, dig, scp   Special Note: POSIX Bash/shell scripting  OS Admin Concepts  initd systemd virtualization/containers memory/storage file systems  Programming Setup  Hugo and Quarto Git Languages  Python R Javascript/npm    </description>
+      <description>Linux  Command Line Basics  pwd, cd, ls, and flags mkdir &amp;amp; rmdir, rm, touch man and &amp;ndash;help cp, mv, locate   Intermediate Command Line  echo, cat, and pipes editors (vi/m, nano) sudo, df, du tar, zip, unzip uname, chmod, ping   Terminal Text Manipulation  awk, sed, grep, sort, cut, uniq, fmt, tr, nl, wc   Processes  ps, top, htop, atop, lsof kill, killall   Performance  nmon, iostat, sar, vmstat   Network  traceroute, mtr, ping, nmap, netstat, ufw/firewalld, tcpdump, iptables/nftables, dig, scp   Special Note: POSIX Bash/shell scripting  OS Admin Concepts  initd systemd virtualization/containers memory/storage file systems  Programming Setup  Hugo and Quarto Git Languages  Python R Javascript/npm    Project One  Planning a project  </description>
       <content>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Command Line Basics
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../lesson-1-command-line-starters&#34;&gt;pwd, cd, ls, and flags&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;mkdir &amp;amp; rmdir, rm, touch&lt;/li&gt;
-&lt;li&gt;man and &amp;ndash;help&lt;/li&gt;
-&lt;li&gt;cp, mv, locate&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../lesson-2-directories-and-files&#34;&gt;mkdir &amp;amp; rmdir, rm, touch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../lesson-1-command-line-starters&#34;&gt;man and &amp;ndash;help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;..lesson-2-directories-and-files&#34;&gt;cp, mv&lt;/a&gt;, locate&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Intermediate Command Line
@@ -78,6 +78,10 @@
 &lt;li&gt;Javascript/npm&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;project-one&#34;&gt;Project One&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../lesson-3-project-planning-1&#34;&gt;Planning a project&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </item>
