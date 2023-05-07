@@ -1,0 +1,19 @@
+---
+title: Lesson 4 - First Steps - The Curse of Choice
+date: "2023-04-02"
+author: "Tommie Matherne"
+tags: ["Python", "Project", "CYOA"]
+keywords: ["Python", "COYA"]
+description: "Now that we have a skeleton of a project needs, we have to decide what to build first. We will introduce the concept of a Minimal Viable Product, and how to use it to drive your decisions from beginning to end."
+showFullContent: false
+readingTime: true
+hideComments: false
+color: ""
+format: hugo-md
+---
+
+## How To Decide Where To Start
+
+In our last meeting, we discussed what would go into making a digital version of an RPG game book and what Python concepts need to be learned in order to create it. Hopefully, I also made it apparent that this is a skeleton, not the entire plan. Things will come up, you will never create a 100% plan at the outset. So don't try to do so. Make a basic outline of what you plan to put together, and how it will look and work, and then work forward from there. 
+
+After this skeleton is completed, though, a realization usually hits most new programmers working on their first project. "Where do I start?" This is another freeze point for a lot of folks. You know the pieces are relatively simple to break down, and a rough idea on how to make them fit together, but how to begin creating to make it a project that is cohesive is difficult when just looking at the skeleton. This is when you have to decide what is your Minimal Viable Product? 

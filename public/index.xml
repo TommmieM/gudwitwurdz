@@ -7,7 +7,212 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2023, Tommie Matherne</copyright>
-    <lastBuildDate>Tue, 21 Mar 2023 17:04:50 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Steps - The Curse of Choice</title>
+      <link>/posts/lesson-4-first-steps/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lesson-4-first-steps/</guid>
+      <description>How To Decide Where To Start In our last meeting, we discussed what would go into making a digital version of an RPG game book and what Python concepts need to be learned in order to create it. Hopefully, I also made it apparent that this is a skeleton, not the entire plan. Things will come up, you will never create a 100% plan at the outset. So don&amp;rsquo;t try to do so.</description>
+      <content>&lt;h2 id=&#34;how-to-decide-where-to-start&#34;&gt;How To Decide Where To Start&lt;/h2&gt;
+&lt;p&gt;In our last meeting, we discussed what would go into making a digital version of an RPG game book and what Python concepts need to be learned in order to create it. Hopefully, I also made it apparent that this is a skeleton, not the entire plan. Things will come up, you will never create a 100% plan at the outset. So don&amp;rsquo;t try to do so. Make a basic outline of what you plan to put together, and how it will look and work, and then work forward from there.&lt;/p&gt;
+&lt;p&gt;After this skeleton is completed, though, a realization usually hits most new programmers working on their first project. &amp;ldquo;Where do I start?&amp;rdquo; This is another freeze point for a lot of folks. You know the pieces are relatively simple to break down, and a rough idea on how to make them fit together, but how to begin creating to make it a project that is cohesive is difficult when just looking at the skeleton. This is when you have to decide what is your Minimal Viable Product?&lt;/p&gt;
+&lt;h2 id=&#34;minimal-viable-product&#34;&gt;Minimal Viable Product&lt;/h2&gt;
+&lt;p&gt;A MVP is the least work you can do that can provide at least the basics of the functionality core to the end product you want to produce. In total, what we are looking to build would be an interactive story with branches built into the story that the character can proceed through while gathering items, talents, magic, and other items to affect the branches that are open to us.&lt;/p&gt;
+&lt;p&gt;At minimum, we need to be able to create a story that has branches that the user can choose without any extras. So our MVP looks a lot like a Choose Your Own Adventure. This is both why I didn&amp;rsquo;t choose a CYOA as the project, and what our first step is in the building of the final product we want to produce.&lt;/p&gt;
+&lt;p&gt;All we need to accomplish this is to produce text in terminal, print our choices, accept user input, parse that to determine the choice, and call the next part of the story up depending on the choice made, and print that choice and repeat the process. To do this, we will need the following Python features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;code&gt;print&lt;/code&gt; statement. A very powerful feature of Python, basic as they come, but used daily by even the most seasoned Python developer.&lt;/li&gt;
+&lt;li&gt;Python &lt;code&gt;functions&lt;/code&gt; to control what gets printed to the screen next based on user input.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some other features that we are going to use, not necessarily pertinent to the completion of this project, but pertinent to being features used in a Python project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;if __name__ == &amp;quot;__main__&amp;quot;:&lt;/code&gt; The entry point to Python work. This is so that your file is accessible as a standalone script as well as an importable module. Any Python work can be imported to another Python file. This allows a way of beginning execution, but is not really necessary. Python will execute scripts from top to bottom as it is not compiled, but interpreted at run time. While this is not really needed, it also serves to provide you with a way of knowing where execution begins in order to evaluate the program if you leave it and come back after a time.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;import&lt;/code&gt; statements. Not usually covered in beginning Python books or tutorials, imports allow you to pull in code from outside the current file and work with it. We will be doing this with our own code, but this also applies to libraries outside the Python Standard Library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m sure there will be more, but we will get to it as we go along.&lt;/p&gt;
+&lt;h2 id=&#34;lets-code&#34;&gt;Let&amp;rsquo;s Code!&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m sure everyone has heard of &amp;ldquo;Hello World!&amp;rdquo;. The quintessential first program. Not only used to show absolute newbies that they can indeed &amp;ldquo;do this&amp;rdquo;, but frequently the first program written by veterans working with a new system because it can show you that your toolchain is properly set up simply by being able to execute.&lt;/p&gt;
+&lt;p&gt;With Python, this second reason is not that important for our purposes. We can prove that our toolchain is set up simply by typing &lt;code&gt;python&lt;/code&gt; at our command line. If we get a Python input, we have all the toolchain we need.&lt;/p&gt;
+&lt;p&gt;Instead, I&amp;rsquo;m going to use a slightly less well-known simple introduction for newbies. One stolen from tabletop role playing. When introducing new players to fantasy role playing, we frequently introduce the basic rules by running a player through the Cake Adventure. The adventure is the smallest complete quest possible, or at least that I&amp;rsquo;ve ever seen. The player is told of a cave nearby that is rumored to have a treasure that is guarded only by a single goblin. Upon arrival, said goblin is found, defeated, and the treasure is found to be a piece of cake. The player gets familiar with the basic rules and flow of the game, gains a few experience points, and has a tasty treat!&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s adapt that for our first game. Properly structured, it gives us a story that is short, but can branch, as well as have multiple endings (no, we aren&amp;rsquo;t going to kill the player! Bad designer!)&lt;/p&gt;
+&lt;p&gt;To begin, we need to create our folder structure to hold the files we are working with. Go ahead and create a new directory in your Home named &amp;ldquo;Cake&amp;rdquo; and &lt;code&gt;cd&lt;/code&gt; into it. Once there, use &lt;code&gt;touch&lt;/code&gt; to create a new file named &lt;code&gt;cake.py&lt;/code&gt;. You can use any editor of your choice to actually write this file, I&amp;rsquo;m not going to judge. Personally, I am using vim. It is not the easiest editor for new programmers, but well worth learning. I&amp;rsquo;m going to leave you to figure it&amp;rsquo;s use out if you decide to use it, a tutorial seris on vim would be overblown from our scope here. Like I said, use whatever you feel comfortable with, but eventually, learning vim is something I highly recommend if for no other reason than its ubiquity.&lt;/p&gt;
+&lt;p&gt;Once you have that blank file open in your editor, let&amp;rsquo;s add some text to turn it into a Python program.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{python}&#34; data-lang=&#34;{python}&#34;&gt;#! /bin/python3
+import story
+
+def choose():
+    choice = input(&amp;quot;&amp;quot;&amp;quot;Do you want to: \n 
+    1. Draw your sword and lantern and to in! \n 
+    2. Go home. \n&amp;quot;&amp;quot;&amp;quot;)
+    return choice
+
+def decide(choice):
+    if choice == &#39;1&#39;:
+        story.proceed()
+    elif choice == &#39;2&#39;:
+        story.home()
+    else: 
+        print(&amp;quot;Sorry, I didn&#39;t understand. \n&amp;quot;)
+        choice = choose()
+        decide(choice)
+        
+
+if __name__ == &#39;__main__&#39;:
+    print(&amp;quot;CAKE ADVENTURE!&amp;quot;)
+    print(&amp;quot;&amp;quot;&amp;quot;
+    You were having dinner in the town tavern when you overheard a rumor 
+    of this cave containing a treasure guarded only by a single goblin. This is 
+    your chance! You have been wanting to prove that you are fit for the life of  
+    an adventurer, and if you can get this treasure, no one can doubt you! \n &amp;quot;&amp;quot;&amp;quot;)
+
+    choice = choose()
+    print(choice)
+    decide(choice)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save and exit, and once back to your command line inside your Cake folder where this resides, you can ALMOST run it. If you type in &lt;code&gt;python&lt;/code&gt;, you will get an error that says something along the lines of &amp;ldquo;failed import, module story does not exist&amp;rdquo;. We are going to ignore that for now because we are not done yet. But we will go line by line here and figure out what we have written.&lt;/p&gt;
+&lt;p&gt;The first line is &lt;code&gt;#! /bin/python3&lt;/code&gt;. This is known as a &amp;ldquo;shebang line&amp;rdquo;. On non-Windows systems, this tells the operating system where to find the way to run this program if file permissions say it can be executed. On Windows systems, it just acts like a comment line and has no effect.&lt;/p&gt;
+&lt;p&gt;Next we &lt;code&gt;import story&lt;/code&gt;. This looks first in our operating folder, in our case Cake, for a file named &amp;lsquo;story.py&amp;rsquo; and makes that part of the current program. Anything in that file will be recognized as valid code in this program. Since we haven&amp;rsquo;t yet made that file, this import will cause an error as mentioned above. We will get to that momentarily.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;def choose():&lt;/code&gt; creates a new local function named &amp;lsquo;choose&amp;rsquo;. The &lt;code&gt;def&lt;/code&gt; keyword in Python says we are defining something outside of the Python Standard Library that we want to be able to call and reuse over and over if need be. This isn&amp;rsquo;t going to be our only &amp;lsquo;choose()&amp;rsquo; function, as we will need different choices each time. I put it here to show you how to define a function, what it looks like, and what it does.&lt;/p&gt;
+&lt;p&gt;Then we define another function, &lt;code&gt;decide(choice)&lt;/code&gt;. This one is a bit different. It has something in the parentheses. Why? Because we are declaring that we want to have information before calling this function. We store it in a variable that the function will know as &lt;code&gt;choice&lt;/code&gt;. Inside the function, we can write code that references this variable, and not have to declare it or assign it a value. That value comes from the part of code that calls it.&lt;/p&gt;
+&lt;p&gt;Inside this function, we immediately see another new item, the &lt;code&gt;if&lt;/code&gt; statement. This makes a yes or no decision in Python. The bit between &lt;code&gt;if&lt;/code&gt; and the colon is known as a &amp;ldquo;conditional statement&amp;rdquo;, or a &amp;ldquo;Boolean statement&amp;rdquo;. This will take two things, in this case a variable, &lt;code&gt;choice&lt;/code&gt;, and a string &lt;code&gt;&#39;1&#39;&lt;/code&gt; (make sure this is a string, the &lt;code&gt;input()&lt;/code&gt; function returns a string, and you cannot compare strings to numbers in Python. Well, you can, but it isn&amp;rsquo;t what we want.) This then evaluates to one of two values, the Boolean values of &lt;code&gt;True&lt;/code&gt; or &lt;code&gt;False&lt;/code&gt;. If &lt;code&gt;True&lt;/code&gt;, the code indented below the &lt;code&gt;if&lt;/code&gt; is executed, if &lt;code&gt;False&lt;/code&gt;, that code is skipped.&lt;/p&gt;
+&lt;p&gt;IMPORTANT NOTE: You may have noticed a difference between areas of the code that have &lt;code&gt;=&lt;/code&gt;, and the conditional statements having &lt;code&gt;==&lt;/code&gt;. There is a powerful difference between these two. When Python sees a single &lt;code&gt;=&lt;/code&gt;, it is expecting to assign a value to a variable, will look to the right of that equals sign first, evaluate anything there until there is only one value, and then assign that value to the variable name located to the left of the &lt;code&gt;=&lt;/code&gt;. BUT, if Python sees &lt;code&gt;==&lt;/code&gt;, this is known as the equality operator, and Python will take the left side first, store its value, look at the left side, store its value, and then compare the values to see if they are identical. If they are, Python returns a &lt;code&gt;True&lt;/code&gt; value, and if they are not, Python returns a &lt;code&gt;False&lt;/code&gt; value.&lt;/p&gt;
+&lt;p&gt;But what if you want to make a choice to do different things if something else if &lt;code&gt;True&lt;/code&gt; about the code? Enter &lt;code&gt;elif&lt;/code&gt;! While this may sound like a fantasy creature with a speech impediment, it actually stands for &lt;code&gt;else if&lt;/code&gt;, and allows you another choice. In this case, the conditional statement &lt;code&gt;choice == &#39;2&#39;&lt;/code&gt;. Then it treats the indented code beneath exactly as a normal &lt;code&gt;if&lt;/code&gt;. There is also no limit to the number of &lt;code&gt;elif&lt;/code&gt; clauses you can include beneath an &lt;code&gt;if&lt;/code&gt;, so if you write a story that reaches a point with three or more branches are possible, you can check for each branch with &lt;code&gt;elif&lt;/code&gt; under &lt;code&gt;elif&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Notice below these, there is an &lt;code&gt;else&lt;/code&gt; sitting there with no conditional statement. The &lt;code&gt;else&lt;/code&gt; is a catch-all. It covers your bacon if you have something that you want to do if none of the expected conditions covered in your &lt;code&gt;if&lt;/code&gt; or &lt;code&gt;elif&lt;/code&gt; clauses were ccaught. It allows you to do something in that case. So what do our clauses do? Let&amp;rsquo;s cover those one by one&amp;hellip;&lt;/p&gt;
+&lt;p&gt;With our &lt;code&gt;if&lt;/code&gt;, when a player chooses to enter the cavern, it goes to our &lt;code&gt;import&lt;/code&gt;ed file, &lt;code&gt;story.py&lt;/code&gt; (which we haven&amp;rsquo;t created, yet), and looks for a function named &lt;code&gt;proceed()&lt;/code&gt; to be executed. Our &lt;code&gt;elif&lt;/code&gt;, similarly, looks to &lt;code&gt;story.py&lt;/code&gt; for a function named &lt;code&gt;home()&lt;/code&gt; and executes it.&lt;/p&gt;
+&lt;p&gt;But what if the player enters something we don&amp;rsquo;t cover with a function? under the &lt;code&gt;else:&lt;/code&gt; you can see that we apologize (treat your readers/players with respect), then go back to the &lt;code&gt;choice()&lt;/code&gt; function. Then we do something really freaking strange. We&amp;hellip; call&amp;hellip; the function we are in, &lt;code&gt;decide(choice)&lt;/code&gt;&amp;hellip; from inside &lt;code&gt;decide(choice)&lt;/code&gt;? Is that allowed?&lt;/p&gt;
+&lt;p&gt;It totally is! In fact, this is an important programming concept called &amp;ldquo;recursion&amp;rdquo;. Calling a function from inside itself makes it possible to perform any action with repeated steps by only calling the function once in code, but running that step as often as needed to complete the task. In our case, we have it easy, we only need &lt;code&gt;decide(choice)&lt;/code&gt; to recur until our reader/player plays ball and gives a valid answer.&lt;/p&gt;
+&lt;p&gt;Notice, this is at the top of the file. I have said before that Python executes from the top of the file down. Later, when all the peices are in place and no errors return, you will notice that when you run it, this will not actually print anything to the screen. Also, you may be questioning why this is first, if Python goes from the top of the file and goes down, and I also said that &lt;code&gt;if __name__ == &#39;__main__&#39;:&lt;/code&gt; is the entry point of file execution.&lt;/p&gt;
+&lt;p&gt;All of these things are true. Python is reading from the top down, and execution hasn&amp;rsquo;t strictly started yet. All of this part is just defining things for Python to keep in the background for later reference. So what are we wanting to store for later reference? our next line is a &lt;code&gt;input(&amp;quot;&amp;quot;)&lt;/code&gt; call. &lt;code&gt;input()&lt;/code&gt; is a Python function that will print whatever you put in the parentheses (known as an &amp;ldquo;argument&amp;rdquo;), print it to the screen, then give a input to the user and pause all execution of the program until the user types in something and presses enter.&lt;/p&gt;
+&lt;p&gt;Some notes about the text string inside the parentheses for this particular &lt;code&gt;input&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Note the triple quotes. Python will recognize this as a multi-line string. You can break up the text by pressing enter in your text editor if you need to, and Python will still treat it as a continuous line. For long strings like a story, this is useful.&lt;/li&gt;
+&lt;li&gt;The &amp;lsquo;\n&amp;rsquo; areas are what is known as &amp;ldquo;escaped characters&amp;rdquo; in Python strings. These do not print to screen as they are presented, but do something different. These in particular are &amp;ldquo;new line&amp;rdquo; characters. When you see a &amp;lsquo;\n&amp;rsquo;, Python will enter a line break in the terminal output. This keeps things looking nice for your presentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then we are storing a way for decisions to be made upon that &lt;code&gt;input()&lt;/code&gt;, if needed, &lt;code&gt;input()&lt;/code&gt; our player again, and make that decision all over. Python will keep this in mind for us, our work is done.&lt;/p&gt;
+&lt;p&gt;Whew, we have finally made it to our actual program! &lt;code&gt;if __name__ == &#39;__main__&#39;:&lt;/code&gt;. This is going to be the first things our program apparently does when we run it. So what do we do with it? This is rather short:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;print()&lt;/code&gt; functions act much like &lt;code&gt;input()&lt;/code&gt; with the difference being that once it reaches the end of the string passed to it as an argument, Python just continues execution of the program. So why do two &lt;code&gt;print()&lt;/code&gt; calls rather than just one and put everything together? Honestly, you could. I just wanted to have only the name of the story-game on the first printed line, and then begin printing the story itself.&lt;/p&gt;
+&lt;p&gt;After the story is presented, we have both our first variable declaration, and our first call to a function that we defined. The program, at this point will call the &lt;code&gt;choose()&lt;/code&gt; function, execute it as described, and then store that value (the input string from the user), in the variable named &lt;code&gt;choice&lt;/code&gt;. This flow of execution is important to keep in mind!&lt;/p&gt;
+&lt;p&gt;When you see a variable being assigned a value in Python, the interpreter will look at what is AFTER the &lt;code&gt;=&lt;/code&gt;, or assignment operator, execute that if needed to arrive at a value. Only after that execution has completed, will the variable be stored in memory and point at the value derived.&lt;/p&gt;
+&lt;p&gt;So, now that we know what is going on in this file, lets complete our program. Back in your Cake folder, create a file named, of course, &lt;code&gt;story.py&lt;/code&gt;. We know of two functions that will need to be included, &lt;code&gt;proceed()&lt;/code&gt; and &lt;code&gt;home()&lt;/code&gt;. Will there be others? Yes, there will be. In fact, this is how it looks for me. If you want to branch your story more, feel free to follow the patterns established and expand your story as much as you want.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{python}&#34; data-lang=&#34;{python}&#34;&gt;#! /bin/python3
+#! /bin/python3
+
+def fight():
+    print(&amp;quot;&amp;quot;&amp;quot;Well, this is what it came down to! What you \n
+    kind of hoped for. But you didn&#39;t think it would be this... \n
+    Intense! \n
+    \n
+    The goblin obviously doesn&#39;t have a sense of its own \n
+    mortality as it comes across at you with a dinner knife. \n
+    By the time it dawns on you that the only treasure it owns \n
+    is the cake on the table, and that the cake means more to this \n
+    creature than it really does to you, there is a dull slice \n
+    from the knife under the armor flap near your wrist! \n
+    \n
+    It wasn&#39;t really much of a battle. A few parries to avoid \n
+    any more scratches from its dulled dinner knife, and one \n
+    good cut on your part puts the goblin down. You decide to \n
+    try the cake anyway and see for yourself if the goblin was \n
+    THAT out of its mind. You&#39;d recognize your aunt&#39;s baking \n
+    anywhere. You kind of get it. No idea how the goblin got a hold \n
+    of it, but there are doubtful to be any goblin bakers quite \n
+    like her! \n
+    \n
+    You go back to town with your story, and a bit of frosting \n
+    on your lip for evidence. That is how your adventuring career \n
+    begins, with little fanfare, no actual treasure, but a lot \n
+    of local reknown that you will continue to turn into more adventure. \n
+    \n
+    The end, hero!&amp;quot;&amp;quot;&amp;quot;
+    )
+
+def bargeIn():
+    def choice():
+        decision = input(&amp;quot;&amp;quot;&amp;quot;what do you want to do? \n
+        1. FLEE! \n
+        2. FIGHT! \n&amp;quot;&amp;quot;&amp;quot;)
+        return decision
+
+    def branch(decision):
+        if decision == &#39;1&#39;:
+            home()
+        elif decision == &#39;2&#39;:
+            fight()
+        else:
+            print(&amp;quot;Sorry, I don&#39;t understand. \n&amp;quot;)
+            decsion = choice()
+            branch(decision)
+
+    print(&amp;quot;&amp;quot;&amp;quot;Throwing the detritus that passes for a goblin door \n
+    you enter a small chamber. Before you on a table is a \n
+    single bare candle throwing a dancing light around the \n
+    room. Also on the table is a fine looking slice of cake. \n
+    \n
+    Opposite you from the table, sits a chair that contains \n
+    an goblin that is apparently angry at having its dessert \n
+    interrupted! \n
+    \n
+    It drops its fork, but retains the small knife it was holding \n
+    and comes around the table at you with a scream!&amp;quot;&amp;quot;&amp;quot;)
+
+    option = choice()
+    branch(option)
+
+def home():
+    print(&amp;quot;&amp;quot;&amp;quot;
+    You decide to head home. Honestly, you don&#39;t know \n
+    what you were thinking. An adventurer? Hunters get \n
+    killed by prey all the time, and deer and pigs don&#39;t \n
+    hold a grudge like a goblin does! \n
+    \n
+    \t It takes until almost morning to get back home, but \n
+    at least your bed is safe. \n
+    \n
+    The end, you lived.
+    &amp;quot;&amp;quot;&amp;quot;)
+
+def proceed():
+    def choice():
+        decision = input(&amp;quot;&amp;quot;&amp;quot;what do you want to do? \n
+        1. Turn back. \n
+        2. Barge in! \n&amp;quot;&amp;quot;&amp;quot;)
+        return decision
+
+    def branch(decision):
+        if decision == &#39;1&#39;:
+            home()
+        elif decision == &#39;2&#39;:
+            bargeIn()
+        else:
+            print(&amp;quot;Sorry, I don&#39;t understand. \n&amp;quot;)
+            decsion = choice()
+            branch(decision)
+
+    print(&amp;quot;&amp;quot;&amp;quot;
+        Drawing your sword and lighting your lantern, you \n
+        proceed through the dark maw of the cavern entrance. \n
+        \n
+        It isn&#39;t much of a cavern, but it&#39;s shallowness is \n
+        hidden from the entrance by a quick cut right in the \n
+        passage about thirty yards in. A short way down the \n
+        right hand passage, you see a makeshift door constucted \n
+        of branches and twigs. Beyond it, you see the dancing light \n
+        of a candle.
+        &amp;quot;&amp;quot;&amp;quot;)
+    decision = choice()
+    branch(decision)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We aren&amp;rsquo;t going to go as much into detail in this part as the previous, as there really isn&amp;rsquo;t anything new, just different. First of all, you will likely notice that for the most part, the functions are in reverse order. That is because a function needs to be defined &lt;strong&gt;before&lt;/strong&gt; it gets called. If, for instance, you put &lt;code&gt;proceed()&lt;/code&gt; at the top, when the &lt;code&gt;branch()&lt;/code&gt; function calls on &lt;code&gt;bargeIn()&lt;/code&gt;, Python wouldn&amp;rsquo;t know what to do with that, as it hasn&amp;rsquo;t gotten to the part of the file that defines &lt;code&gt;bargeIn()&lt;/code&gt; yet.&lt;/p&gt;
+&lt;p&gt;Speaking of, you may notice that the &lt;code&gt;choose()&lt;/code&gt; and &lt;code&gt;decide(choice)&lt;/code&gt; functions take on new names, change the name of the arguments, or sometimes the variables passed doesn&amp;rsquo;t match the variable name in the function definition. This is to show you that this is &lt;strong&gt;fine&lt;/strong&gt;. The names are arbitrary, and variable name consistency only has to be maintained inside of the particular block of code referencing that variable.&lt;/p&gt;
+&lt;p&gt;For instance, in &lt;code&gt;bargeIn()&lt;/code&gt;, I name the function &lt;code&gt;branch(decision)&lt;/code&gt;. Inside of the function definition, I stick to referring to the variable as &lt;code&gt;decision&lt;/code&gt;. But in the actual area where we call the function to be executed, I wrote the line as &lt;code&gt;branch(option)&lt;/code&gt;. This still works. During a function call that requires an argument, you pass in a variable from the code you are working on, and you call it by whatever name it has in that part of the code. Once it actually passes control to the function itself, the variable name essentially gets changed to whatever you named it inside the function, in this case &lt;code&gt;decision&lt;/code&gt;, and the code proceeds.&lt;/p&gt;
+&lt;p&gt;Additionally, you probably noticed that there are function definitions inside of function definitions! This is called nesting functions. For our purposes, it is useful because we are writing functions with the same name in this file, but the function names have to do different things in each of the outer functions that contain them. By nesting them inside the function that will call them, the inner functions effectively don&amp;rsquo;t exist for any other functions in this file!&lt;/p&gt;
+&lt;p&gt;For instance, if we call &lt;code&gt;choice()&lt;/code&gt; within &lt;code&gt;bargeIn()&lt;/code&gt;, it only sees the function &lt;code&gt;choice()&lt;/code&gt; defined within itself. It cannot know that a function named &lt;code&gt;choice()&lt;/code&gt; also exists inside of &lt;code&gt;proceed()&lt;/code&gt; for example. This is called &amp;ldquo;scope&amp;rdquo;. Pay attention to the indent levels of the file! If you indent something inside a body block, for instance, after the colon in a function definition, it only exists inside that body. Once indent goes back to the level of it&amp;rsquo;s contained area or more, for instance, a new first level indent function definition, that new first level indent cannot see anything in the previous first level indent&amp;rsquo;s body block. It&amp;rsquo;s out of &amp;ldquo;scope&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So, now you know the basics of a lot of advanced Python stuff. We&amp;rsquo;ve covered importing external code, how to write that code to be called in, defining our own functions to get things done when Python doesn&amp;rsquo;t have the abilities baked in, making decisions in code with &lt;code&gt;if&lt;/code&gt; statements, inner and outer functions, scope, and even recursion, which is widely considered one of the most confusing things in all of programming!&lt;/p&gt;
+&lt;p&gt;Take this knowledge, and try to make your own story using this pattern. Have fun with it, that&amp;rsquo;s what coding is all about.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Lesson 3 Project Planning 1</title>
       <link>/posts/lesson-3-project-planning-1/</link>
@@ -311,6 +516,22 @@ First thing that will be done, I am going to be uploading some JavaScript games.
 &lt;p&gt;Next, I will be putting up more posts as were previously seen on &lt;a href=&#34;https://www.blog.gudwitwurdz.click&#34;&gt;blog.gudwitwurdz.click&lt;/a&gt;. Starting with porting over those previous posts and then expanding them. If you were following that (who are you?), those posts will continue, stay tuned.&lt;/p&gt;
 &lt;p&gt;Finally, this site is currently built with Hugo using the Terminal template. Credit is at the bottom of every page if you would like to contact the creator of the template. I will be looking into creating my own template and personalizing this template, as well.&lt;/p&gt;
 </content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/showcase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/</guid>
+      <description>categories = [&#39;Development&#39;, &#39;VIM&#39;] date = &#39;2012-04-06&#39; description = &#39;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&#39; slug = &#39;spf13-vim-3-0-release-and-new-website&#39; tags = [&#39;.vimrc&#39;, &#39;plugins&#39;, &#39;spf13-vim&#39;, &#39;vim&#39;] title = &#39;spf13-vim 3.0 release and new website&#39; </description>
+      <content>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;categories = [&#39;Development&#39;, &#39;VIM&#39;]
+date = &#39;2012-04-06&#39;
+description = &#39;spf13-vim is a cross platform distribution of vim plugins and resources for Vim.&#39;
+slug = &#39;spf13-vim-3-0-release-and-new-website&#39;
+tags = [&#39;.vimrc&#39;, &#39;plugins&#39;, &#39;spf13-vim&#39;, &#39;vim&#39;]
+title = &#39;spf13-vim 3.0 release and new website&#39;
+&lt;/code&gt;&lt;/pre&gt;</content>
     </item>
     
   </channel>
