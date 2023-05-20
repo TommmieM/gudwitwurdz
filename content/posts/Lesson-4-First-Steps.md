@@ -1,5 +1,5 @@
 ---
-title: First Steps - The Curse of Choice
+title: Lesson 4 - First Steps - The Curse of Choice
 date: "2023-04-02"
 author: "Tommie Matherne"
 tags: ["Python", "Project", "CYOA"]

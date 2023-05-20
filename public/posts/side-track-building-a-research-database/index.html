@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Side Track Building a Research Database :: Gud wit Wurdz - Tommie Matherne</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Build a functioning research database using Python, Pandas, and the FRASER API from the St. Louis Federal Reserve" />
+<meta name="keywords" content="research, database, python, project" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/side-track-building-a-research-database/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/styles.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="/img/theme-colors/green.png">
+  <link rel="apple-touch-icon" href="/img/theme-colors/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Side Track Building a Research Database">
+<meta property="og:description" content="Build a functioning research database using Python, Pandas, and the FRASER API from the St. Louis Federal Reserve" />
+<meta property="og:url" content="/posts/side-track-building-a-research-database/" />
+<meta property="og:site_name" content="Gud wit Wurdz - Tommie Matherne" />
+
+  
+  
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2023-05-19 18:02:59 -0600 MDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Gud Wit Wurdz - Tommie Matherne
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/side-track-building-a-research-database/">Side Track Building a Research Database</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2023-05-19 ::
+        
+      </time>
+    
+    
+      <span class="post-author">Tommie Matherne</span>
+    
+    
+      <span class="post-reading-time">:: 6 min read (1250 words)</span>
+    
+  </div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/python/">python</a>&nbsp;
+      
+      #<a href="/tags/database/">database</a>&nbsp;
+      
+      #<a href="/tags/pandas/">pandas</a>&nbsp;
+      
+      #<a href="/tags/sqlite/">sqlite</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="bit-of-a-side-track">Bit of a Side Track<a href="#bit-of-a-side-track" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Today we are going to focus on something a bit different. A real-world level project. Something that you can copy and work with, and even take beyond what we build here to actually start creating your own resume out in order to get hired and make some money! The best part is, this is actually a rather simple project. It&rsquo;s what you decide to do with it afterwards that will make all the difference in your future.</p>
+<p>The building blocks of this project are Python, of course, the Pandas data library, the sqlite3 built-in module for Python. Outside of our actual program, we will need access to the St. Louis Federal Reserve&rsquo;s FRASER REST API. After everything is built, we will draw value out of it using a database viewer.</p>
+<p>For today, we are going to focus on what FRASER is, what it can be used for, what an API is, and why building a database out of the information you can gather using this API is actually something that would apply in the real-world.</p>
+<h2 id="st-louis-federal-reserve-and-fraser">St. Louis Federal Reserve and FRASER<a href="#st-louis-federal-reserve-and-fraser" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Properly named the Federal Reserve Bank of St. Louis, the <a href="https://www.stlouisfed.org">St. Louis Federal Reserve</a> is part of the United States Federal Reserve bank system. While the main decisions are made in New York and Washington, D.C., there are several districts across the country with branches of the Federal Reserve posted in order to take the issues distinct to each district into consideration in reports back to the central hubs. All of this is much better described and shown on the <a href="https://www.stlouisfed.org/about-us">&lsquo;About Us&rsquo;</a> page for the St. Louis Fed itself.</p>
+<p>A thorough reading of that page shows an interesting bullet point under the &lsquo;Our Purpose&rsquo; heading:</p>
+<blockquote>
+<p>Advancing economic knowledge, community development, and fair access to credit.</p>
+</blockquote>
+<p>Part of the way that they advance economic knowledge is through the <a href="https://fraser.stlouisfed.org">FRASER program</a>. Through the FRASER site, you can browse around and find current and historical articles and information about the economic history of the United States from 1784 to today. In addition, you can find cirriculum information and lessons aimed at teaching economics from basics to advanced for audiences from pre-school to collegiate levels.</p>
+<p>Every bit of this data is accessible from their FRASER REST API, which can be cound in the top menu under the &lsquo;About&rsquo; section, or through <a href="https://www.stlouisfed.org/about-us">this link</a>. Let&rsquo;s take a quick tour of what we can get from this API.</p>
+<h2 id="the-grand-tour">The Grand Tour<a href="#the-grand-tour" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I hope you&rsquo;ll pardon the subtle reference in titling this section. Listening to George Jones right now.</p>
+<p>So what is included in the API? Each of the headings includes information on what you need, and how to use the resource to gather that information. After a short overview on what the purpose of the API is, there are immediately instructions on how to request an API key. An API key is used as data passed in your program&rsquo;s calls to the API to let the FRASER website know that you are a legitimate user requesting this information. At a simple level, it can be thought of as a simple way to log into the site for access to information when a program is visiting the site rather than a user.</p>
+<p>The <code>curl</code> command that is given can be typed into a bash or PowerShell prompt, replacing the email address with your own, of course. If the command is successful, you will see <code>{&quot;message&quot;:&quot;API key created and sent via email.&quot;}</code> at your command line, and you will have an email from the St. Louis Fed FRASER project in your inbox that contains your API key. Remember, this is a necessary part of making any call to the API, so don&rsquo;t lose it!</p>
+<p>The second bit of information tells you a bit on how to use the key to interact with FRASER. This can be ignored for now, with Python, we aill be using a different method to create a header. Below that, though, do note that there is a limit on the amount of information you can call for within a given time. You are limited to 30 requests per minute to the site. This may seem like a lot, being one request every two seconds on average, but we are doing this with Python. It is easier than you may think to blow through that limit. Because of that, we will actually be making sure we don&rsquo;t by adding in a two second pause in our work. Sometimes, to act reliably, you have to slow down your program!</p>
+<p>The table in the next section gives you a short description of the different record types you can request, and what is included within them. Below that, you will come across an interface where you can input your API key. This is because you can effectively use this page to run requests to the server provided and see what the responses will look like. We aren&rsquo;t going to actually program anything today, so I encourage you to try this out and see what kind of data you will be working with in order to create a personal database.</p>
+<p>One last thing to keep in mind, is that there are several API requests you can make that include items in curly brackets, such as <code>{itemId}</code> or {titleID}. To actually make these calls, you need to provide a title or item to be searched. At this time, you can take wild guesses on these identifiers, but there isn&rsquo;t really a way to know what identifier will return what information. This is the reason to create the database. We are going to use a lot of calls up front in order to build a repository containing a searchable record on hand of all of this information so that when you want to do actual research, you can simply refer to your own database to find out what identifier you need, make a few calls, and return the maximum information!</p>
+<h2 id="what-to-include">What to include?<a href="#what-to-include" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>So there is obviously a lot of information here. Storing it all would take more memory than our computer can possibly hold. I mean, we are talking about historical records about the United States of America&rsquo;s economic environment almost since its inception! We can&rsquo;t really do that.</p>
+<p>What we can do, though, is make it a lot easier to find out how to call for that information when we need it! For that reason, rather than keep large items, we keep the things that allow us to call for those large items. These are easily realized by simply looking for any API call that doesn&rsquo;t require an identifier. There are only four:</p>
+<ul>
+<li>All author records</li>
+<li>All subject records</li>
+<li>All theme records</li>
+<li>All timeline records</li>
+</ul>
+<p>Don&rsquo;t be fooled, though! This is still a <em>LOT</em> of data! I haven&rsquo;t personally created this database myself yet, I&rsquo;m going to do that along with you next post. However, I am confident that the resulting database will be on the order of a few gigabytes of information, so please ensure you have the space available to store this.</p>
+<h2 id="next-time">Next time&hellip;<a href="#next-time" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>In our next post, we will move into actually creating the Python scripts that we will combine into a program that will request all of this information and store it in a brand new databse for our easy access. In the meantime, as mentioned, acquire your API key, come back to the API documentation page, and make a few requests to see what REST data looks like.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/lesson-4-first-steps/">
+                <span class="button__text">Lesson 4 - First Steps - The Curse of Choice</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>2023, Tommie Matherne</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

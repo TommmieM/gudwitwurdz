@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pandas on Gud wit Wurdz - Tommie Matherne</title>
+    <link>/tags/pandas/</link>
+    <description>Recent content in pandas on Gud wit Wurdz - Tommie Matherne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2023, Tommie Matherne</copyright>
+    <lastBuildDate>Fri, 19 May 2023 18:02:59 -0600</lastBuildDate><atom:link href="/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Side Track Building a Research Database</title>
+      <link>/posts/side-track-building-a-research-database/</link>
+      <pubDate>Fri, 19 May 2023 18:02:59 -0600</pubDate>
+      
+      <guid>/posts/side-track-building-a-research-database/</guid>
+      <description>Bit of a Side Track Today we are going to focus on something a bit different. A real-world level project. Something that you can copy and work with, and even take beyond what we build here to actually start creating your own resume out in order to get hired and make some money! The best part is, this is actually a rather simple project. It&amp;rsquo;s what you decide to do with it afterwards that will make all the difference in your future.</description>
+      <content>&lt;h2 id=&#34;bit-of-a-side-track&#34;&gt;Bit of a Side Track&lt;/h2&gt;
+&lt;p&gt;Today we are going to focus on something a bit different. A real-world level project. Something that you can copy and work with, and even take beyond what we build here to actually start creating your own resume out in order to get hired and make some money! The best part is, this is actually a rather simple project. It&amp;rsquo;s what you decide to do with it afterwards that will make all the difference in your future.&lt;/p&gt;
+&lt;p&gt;The building blocks of this project are Python, of course, the Pandas data library, the sqlite3 built-in module for Python. Outside of our actual program, we will need access to the St. Louis Federal Reserve&amp;rsquo;s FRASER REST API. After everything is built, we will draw value out of it using a database viewer.&lt;/p&gt;
+&lt;p&gt;For today, we are going to focus on what FRASER is, what it can be used for, what an API is, and why building a database out of the information you can gather using this API is actually something that would apply in the real-world.&lt;/p&gt;
+&lt;h2 id=&#34;st-louis-federal-reserve-and-fraser&#34;&gt;St. Louis Federal Reserve and FRASER&lt;/h2&gt;
+&lt;p&gt;Properly named the Federal Reserve Bank of St. Louis, the &lt;a href=&#34;https://www.stlouisfed.org&#34;&gt;St. Louis Federal Reserve&lt;/a&gt; is part of the United States Federal Reserve bank system. While the main decisions are made in New York and Washington, D.C., there are several districts across the country with branches of the Federal Reserve posted in order to take the issues distinct to each district into consideration in reports back to the central hubs. All of this is much better described and shown on the &lt;a href=&#34;https://www.stlouisfed.org/about-us&#34;&gt;&amp;lsquo;About Us&amp;rsquo;&lt;/a&gt; page for the St. Louis Fed itself.&lt;/p&gt;
+&lt;p&gt;A thorough reading of that page shows an interesting bullet point under the &amp;lsquo;Our Purpose&amp;rsquo; heading:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Advancing economic knowledge, community development, and fair access to credit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Part of the way that they advance economic knowledge is through the &lt;a href=&#34;https://fraser.stlouisfed.org&#34;&gt;FRASER program&lt;/a&gt;. Through the FRASER site, you can browse around and find current and historical articles and information about the economic history of the United States from 1784 to today. In addition, you can find cirriculum information and lessons aimed at teaching economics from basics to advanced for audiences from pre-school to collegiate levels.&lt;/p&gt;
+&lt;p&gt;Every bit of this data is accessible from their FRASER REST API, which can be cound in the top menu under the &amp;lsquo;About&amp;rsquo; section, or through &lt;a href=&#34;https://www.stlouisfed.org/about-us&#34;&gt;this link&lt;/a&gt;. Let&amp;rsquo;s take a quick tour of what we can get from this API.&lt;/p&gt;
+&lt;h2 id=&#34;the-grand-tour&#34;&gt;The Grand Tour&lt;/h2&gt;
+&lt;p&gt;I hope you&amp;rsquo;ll pardon the subtle reference in titling this section. Listening to George Jones right now.&lt;/p&gt;
+&lt;p&gt;So what is included in the API? Each of the headings includes information on what you need, and how to use the resource to gather that information. After a short overview on what the purpose of the API is, there are immediately instructions on how to request an API key. An API key is used as data passed in your program&amp;rsquo;s calls to the API to let the FRASER website know that you are a legitimate user requesting this information. At a simple level, it can be thought of as a simple way to log into the site for access to information when a program is visiting the site rather than a user.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;curl&lt;/code&gt; command that is given can be typed into a bash or PowerShell prompt, replacing the email address with your own, of course. If the command is successful, you will see &lt;code&gt;{&amp;quot;message&amp;quot;:&amp;quot;API key created and sent via email.&amp;quot;}&lt;/code&gt; at your command line, and you will have an email from the St. Louis Fed FRASER project in your inbox that contains your API key. Remember, this is a necessary part of making any call to the API, so don&amp;rsquo;t lose it!&lt;/p&gt;
+&lt;p&gt;The second bit of information tells you a bit on how to use the key to interact with FRASER. This can be ignored for now, with Python, we aill be using a different method to create a header. Below that, though, do note that there is a limit on the amount of information you can call for within a given time. You are limited to 30 requests per minute to the site. This may seem like a lot, being one request every two seconds on average, but we are doing this with Python. It is easier than you may think to blow through that limit. Because of that, we will actually be making sure we don&amp;rsquo;t by adding in a two second pause in our work. Sometimes, to act reliably, you have to slow down your program!&lt;/p&gt;
+&lt;p&gt;The table in the next section gives you a short description of the different record types you can request, and what is included within them. Below that, you will come across an interface where you can input your API key. This is because you can effectively use this page to run requests to the server provided and see what the responses will look like. We aren&amp;rsquo;t going to actually program anything today, so I encourage you to try this out and see what kind of data you will be working with in order to create a personal database.&lt;/p&gt;
+&lt;p&gt;One last thing to keep in mind, is that there are several API requests you can make that include items in curly brackets, such as &lt;code&gt;{itemId}&lt;/code&gt; or {titleID}. To actually make these calls, you need to provide a title or item to be searched. At this time, you can take wild guesses on these identifiers, but there isn&amp;rsquo;t really a way to know what identifier will return what information. This is the reason to create the database. We are going to use a lot of calls up front in order to build a repository containing a searchable record on hand of all of this information so that when you want to do actual research, you can simply refer to your own database to find out what identifier you need, make a few calls, and return the maximum information!&lt;/p&gt;
+&lt;h2 id=&#34;what-to-include&#34;&gt;What to include?&lt;/h2&gt;
+&lt;p&gt;So there is obviously a lot of information here. Storing it all would take more memory than our computer can possibly hold. I mean, we are talking about historical records about the United States of America&amp;rsquo;s economic environment almost since its inception! We can&amp;rsquo;t really do that.&lt;/p&gt;
+&lt;p&gt;What we can do, though, is make it a lot easier to find out how to call for that information when we need it! For that reason, rather than keep large items, we keep the things that allow us to call for those large items. These are easily realized by simply looking for any API call that doesn&amp;rsquo;t require an identifier. There are only four:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;All author records&lt;/li&gt;
+&lt;li&gt;All subject records&lt;/li&gt;
+&lt;li&gt;All theme records&lt;/li&gt;
+&lt;li&gt;All timeline records&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don&amp;rsquo;t be fooled, though! This is still a &lt;em&gt;LOT&lt;/em&gt; of data! I haven&amp;rsquo;t personally created this database myself yet, I&amp;rsquo;m going to do that along with you next post. However, I am confident that the resulting database will be on the order of a few gigabytes of information, so please ensure you have the space available to store this.&lt;/p&gt;
+&lt;h2 id=&#34;next-time&#34;&gt;Next time&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;In our next post, we will move into actually creating the Python scripts that we will combine into a program that will request all of this information and store it in a brand new databse for our easy access. In the meantime, as mentioned, acquire your API key, come back to the API documentation page, and make a few requests to see what REST data looks like.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
